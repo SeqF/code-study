@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="zh-cmn-Hans" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.6">
+    <title>Data visualization</title>
+
+    <!-- Bootstrap core CSS -->
+    <link th:href="@{/bootstrap4/css/bootstrap.min.css}" rel="stylesheet">
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <link th:href="@{/bootstrap4/css/dashboard.css}" rel="stylesheet">
+    <!--引入js文件-->
+    <script th:src="@{/echarts/js/echarts.min.js}"></script>
+</head>
+<body>
+<!--顶部导航栏-->
+<div th:replace="~{commons/commons::navbar}"></div>
+
+<div class="container-fluid">
+    <div class="row">
+        <!--侧边栏-->
+        <!--传递参数给组件-->
+        <div th:replace="~{commons/commons::sidebar(active='main.html')}"></div>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                <h1 class="h2"></h1>
+                <div class="btn-toolbar mb-2 mb-md-0">
+                    <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+                        <span data-feather="calendar"></span>
+                        This week
+                    </button>
+                </div>
+            </div>
+
+            <!--这个图表来展示每个年度的IMDB高分电影数量-->
+            <!--            <canvas class="my-4 w-100" id="myChart" width="800" height="400"></canvas>-->
+            <div style="position: relative; width: 800px; height: 400px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;">
+                <canvas class="my-4 w-100" id="myChart" width="800" height="400"
+                        style="position: absolute; left: 0px; top: 0px; width: 800px; height: 400px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas>
+            </div>
+            <script type="text/javascript">
+                var myChart = echarts.init(document.getElementById('myChart'));
+                var colors = ['#5793f3', '#d14a61', '#675bba'];
+
+                option = {
+                    color: colors,
+
+                    tooltip: {
+                        trigger: 'axis',
+                        axisPointer: {
+                            type: 'cross'
+                        }
+                    },
+                    grid: {
+                        right: '20%'
+                    },
+                    toolbox: {
+                        feature: {
+                            dataView: {show: true, readOnly: false},
+                            restore: {show: true},
+                            saveAsImage: {show: true}
+                        }
+                    },
+                    legend: {
+                        data: ['类型数量', 'IMDB平均分']
+                    },
+                    xAxis: [
+                        {
+                            type: 'category',
+                            axisTick: {
+                                alignWithLabel: true
+                            },
+                            data: ['Action', 'Adventure', 'Animation', 'Biography', 'Comedy', 'Crime', 'Drama', 'Family', 'Fantasy', 'History', 'Horror', 'Music', 'Musical', 'Mystery', 'Romance', 'Sci-Fi', 'Sport', 'Thriller', 'War', 'Western', 'AVGPoint']
+                        }
+                    ],
+                    yAxis: [
+                        {
+                            type: 'value',
+                            name: 'Number',
+                            min: 0,
+                            max: 2000,
+                            position: 'left',
+                            axisLine: {
+                                lineStyle: {
+                                    color: colors[0]
+                                }
+                            }
+                        },
+                        {
+                            type: 'value',
+                            name: 'Point',
+                            min: 0,
+                            max: 10,
+                            position: 'right',
+                            axisLine: {
+                                lineStyle: {
+                                    color: colors[1]
+                                }
+                            }
+                        }
+                    ],
+                    series: [
+                        {
+                            name: 'TypeNumber',
+                            type: 'bar',
+                            data: [1357, 184, 258, 330, 1634, 349, 1679, 21, 45, 7, 499, 3, 6, 49, 38, 29, 1, 91, 1, 7]
+                        },
+                        {
+                            name: 'AVGPoint',
+                            type: 'line',
+                            yAxisIndex: 1,
+                            data: [5.8, 6.2, 6.6, 6.8, 6, 6.2, 6.4, 5.9, 5.5, 5.9, 5.1, 8, 7.1, 6, 6.2, 5.1, 7.7, 5.8, 5.6, 5.3]
+                        }
+                    ]
+                };
+                myChart.setOption(option);
+            </script>
+        </main>
+    </div>
+</div>
+
+<!-- Placed at the end of the document so the pages load faster -->
+<script th:src="@{/bootstrap4/others/jquery-3.4.1.slim.min.js}"></script>
+<script th:src="@{/bootstrap4/others/popper.min.js}"></script>
+<script th:src="@{/bootstrap4/js/bootstrap.min.js}"></script>
+
+<!-- Icons -->
+<script th:src="@{/bootstrap4/js/feather.min.js}"></script>
+<script>
+    feather.replace()
+</script>
+</body>
+</html>

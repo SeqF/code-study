@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4b49997b-c7b5-47c5-81d8-878003eb4711" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$USER_HOME$/Maven/apache-maven-3.6.3" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8" />
+    <option name="vmOptions" value="-DarchetypeCatalog=internal" />
+  </component>
+  <component name="ProjectId" id="1XqLbDmn86lZV7QvI5ryKuZiBIo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../day04_03_account_aoptx_anno" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\50547\IdeaProjects\test\day04_02_account_aoptx_xml\src" />
+      <recent name="C:\Users\50547\IdeaProjects\test\day04_02_account_aoptx_xml" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4b49997b-c7b5-47c5-81d8-878003eb4711" name="Default Changelist" comment="" />
+      <created>1581768746479</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581768746479</updated>
+      <workItem from="1581768747873" duration="194000" />
+      <workItem from="1581770129048" duration="2833000" />
+      <workItem from="1583850736761" duration="15000" />
+      <workItem from="1588239744291" duration="981000" />
+      <workItem from="1588424705647" duration="2044000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="992" y="226" key="#Project_Structure" timestamp="1581768867881">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="992" y="226" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1581768867881" />
+    <state x="479" y="526" key="FileChooserDialogImpl" timestamp="1588427205936">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="479" y="526" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588427205936" />
+    <state x="814" y="116" width="977" height="785" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1581770425352">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="814" y="116" width="977" height="785" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581770425352" />
+  </component>
+</project>

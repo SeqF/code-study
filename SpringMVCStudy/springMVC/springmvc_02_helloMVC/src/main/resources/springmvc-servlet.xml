@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--1.处理器映射器-->
+    <bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>
+
+    <!--2.处理器适配器-->
+    <bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"/>
+
+    <!--3.视图解析器：DispatcherServlet给他的ModelAndView
+        1. 获取了ModelAndView的数据
+        2. 解析ModelAndView的视图名字
+        3. 拼接视图名字，找到对应的视图: /WEB-INF/jsp/hello.jsp
+        4. 将数据渲染到这个视图上
+        配置完之后就不用写完整的jsp路径，直接写名字即可-->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" id="internalResourceViewResolver">
+        <!--前缀-->
+        <property name="prefix" value="/WEB-INF/jsp/"/>
+        <!--后缀-->
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+
+    <!--Handler-->
+    <!--HandlerMapping根据url查找Handler
+        处理器映射器找到bean id-->
+    <!--HandlerExecution将解析后的信息传给DispatcherServlet ,由DispatcherServlet分发给HandlerAdapter-->
+    <!--HandlerAdapter 处理器适配器找到bean class-->
+    <bean id="/hello" class="com.study.controller.HelloController"/>
+
+</beans>

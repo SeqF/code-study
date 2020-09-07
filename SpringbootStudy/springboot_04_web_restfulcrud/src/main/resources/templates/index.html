@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-cmn-Hans" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Signin</title>
+
+    <!-- Bootstrap core CSS -->
+    <link th:href="@{/bootstrap4/css/bootstrap.min.css}" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link th:href="@{/bootstrap4/css/signin.css}" rel="stylesheet">
+</head>
+
+<body class="text-center">
+<form class="form-signin" th:action="@{/user/login}">
+    <!--    <img class="mb-4" src="/docs/4.4/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">-->
+    <h1 class="h3 mb-3 font-weight-normal" th:text="#{login.tip}">Please sign in</h1>
+
+    <!--如果msg的不为空，才显示消息-->
+    <p style="color: #dc3545" th:text="${msg}" th:if="${not #strings.isEmpty(msg)}"></p>
+
+    <label for="inputUsername" class="sr-only" th:text="#{login.username}">Username</label>
+    <input type="email" name="username" id="inputUsername" class="form-control" th:placeholder="#{login.username}" required autofocus>
+
+    <label for="inputPassword" class="sr-only" th:text="#{login.password}">Password</label>
+    <input type="password" name="password" id="inputPassword" class="form-control" th:placeholder="#{login.password}" required>
+
+    <div class="checkbox mb-3">
+        <label>
+            <input type="checkbox" value="remember-me"> [[#{login.remember}]]
+        </label>
+    </div>
+
+    <button class="btn btn-lg btn-primary btn-block" type="submit">[[#{login.sign}]]</button>
+
+    <p class="mt-5 mb-3 text-muted">&copy; 2017-2019</p>
+
+    <a class="btn btn-sm" th:href="@{/index.html(lang='zh_CN')}">中文</a>
+    <a class="btn btn-sm" th:href="@{/index.html(lang='en_US')}">English</a>
+</form>
+
+<!--first jquery,then popper,and then bootstrap Placed at the end can make doc load faster-->
+<script th:src="@{/bootstrap4/others/jquery-3.4.1.slim.min.js}"></script>
+<script th:src="@{/bootstrap4/others/popper.min.js}"></script>
+<script th:src="@{/bootstrap4/js/bootstrap.min.js}"></script>
+
+</body>
+</html>

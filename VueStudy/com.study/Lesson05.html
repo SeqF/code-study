@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://lib.baomitu.com/vue/2.6.11/vue.common.dev.js"></script>
+</head>
+<body>
+
+<div id="myApp">
+    <ol>
+        <!--v-bind 绑定组件属性的值-->
+        <game-item v-for="item in games" v-bind:game="item"></game-item>
+    </ol>
+</div>
+
+<script>
+
+    /*组件自定义: game-item*/
+    Vue.component('game-item',{
+        props: ['game'],
+        template: '<li>{{game.title}}</li>'
+    });
+
+    /*Vue对象实例化*/
+    var myApp = new Vue({
+        /*绑定id*/
+        el: '#myApp',
+        data: {
+            games: [
+                {title: '斗地主'},
+                {title: '打麻将'},
+                {title: 'UNO'}
+            ]
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://lib.baomitu.com/vue/2.6.11/vue.common.dev.js"></script>
+</head>
+<body>
+
+<div id="myApp">
+    <p>你最喜欢的游戏是：{{mygame}}</p>
+    <input v-model="mygame">
+</div>
+
+<script>
+    var myApp = new Vue({
+        /*绑定id*/
+        el: '#myApp',
+        data: {
+            mygame: '超级马里奥'
+        },
+    });
+</script>
+</body>
+</html>

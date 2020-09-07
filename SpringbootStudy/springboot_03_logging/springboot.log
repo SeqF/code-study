@@ -1,0 +1,11 @@
+2020-03-06 16:01:41.021  INFO 1544 --- [main] .s.s.Springboot03LoggingApplicationTests : Starting Springboot03LoggingApplicationTests on BOSS with PID 1544 (started by 50547 in C:\Users\50547\IdeaProjects\SpringbootStudy\springboot_03_logging)
+2020-03-06 16:01:41.024 DEBUG 1544 --- [main] .s.s.Springboot03LoggingApplicationTests : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-06 16:01:41.028  INFO 1544 --- [main] .s.s.Springboot03LoggingApplicationTests : No active profile set, falling back to default profiles: default
+2020-03-06 16:01:43.438  INFO 1544 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-06 16:01:43.868  INFO 1544 --- [main] .s.s.Springboot03LoggingApplicationTests : Started Springboot03LoggingApplicationTests in 3.432 seconds (JVM running for 4.889)
+2020-03-06 16:01:44.121 TRACE 1544 --- [main] .s.s.Springboot03LoggingApplicationTests : 这是trace日志
+2020-03-06 16:01:44.121 DEBUG 1544 --- [main] .s.s.Springboot03LoggingApplicationTests : 这是debug日志
+2020-03-06 16:01:44.121  INFO 1544 --- [main] .s.s.Springboot03LoggingApplicationTests : 这是info日志
+2020-03-06 16:01:44.122  WARN 1544 --- [main] .s.s.Springboot03LoggingApplicationTests : 这是warn日志
+2020-03-06 16:01:44.122 ERROR 1544 --- [main] .s.s.Springboot03LoggingApplicationTests : 这是error日志
+2020-03-06 16:01:44.142  INFO 1544 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

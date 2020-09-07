@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="_fragments::head(~{::title})">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../static/css/me.css" th:href="@{/css/me.css}">
+</head>
+<body>
+
+<!--导航-->
+<nav th:replace="_fragments::menu(1)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+    <div class="ui container">
+        <div class="ui inverted secondary stackable menu">
+            <h2 class="ui teal header item">Blog</h2>
+            <a href="#" class="m-item item m-mobile-hide"><i class="home icon"></i>首页</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="idea icon"></i>分类</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="tags icon"></i>标签</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="clone icon"></i>归档</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="info icon"></i>关于我</a>
+            <div class="right m-item item m-mobile-hide">
+                <div class="ui icon inverted transparent input">
+                    <input type="text" placeholder="Search...">
+                    <i class="search link icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+        <i class="sidebar icon"></i>
+    </a>
+</nav>
+
+
+<!--中间内容-->
+<div class="m-container-small m-padded-tb-big">
+    <div class="ui container">
+        <div class="ui stackable grid">
+            <!--左边博客展示-->
+            <div class="eleven wide column">
+                <!--header-->
+                <div class="ui attached segment">
+                    <div class="ui middle aligned two column grid">
+                        <div class="column">
+                            <h3 class="ui teal header">博客</h3>
+                        </div>
+                        <div class="right aligned column">
+                            共 <h3 class="ui orange header m-inline-block m-text-thin"> 14 </h3>篇
+                        </div>
+                    </div>
+                </div>
+                <!--content-->
+                <div class="ui attached segment">
+                    <div class="ui padded vertical segment m-padded-tb-large">
+                        <div class="ui mobile reversed stackable grid">
+                            <div class="eleven wide column">
+                                <!--博客标题-->
+                                <h3 class="ui header">再给我两分钟，让我把鸡鸡结成冰</h3>
+                                <!--博客首段-->
+                                <p class="m-text">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                                <div class="ui grid">
+                                    <div class="eleven wide column">
+                                        <div class="ui mini horizontal link list">
+                                            <div class="item">
+                                                <!--头像-->
+                                                <img th:src="@{/images/fentou.jpg}" alt="" class="ui avatar image">
+                                                <!--名字-->
+                                                <div class="content">
+                                                    <a href="#" class="header">paksu</a>
+                                                </div>
+                                            </div>
+                                            <!--日期-->
+                                            <div class="item">
+                                                <i class="calendar icon"></i> 2020-1-1
+                                            </div>
+                                            <!--浏览量-->
+                                            <div class="item">
+                                                <i class="eye icon"></i> 9999
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right aligned five wide column">
+                                        <a href="#" target="_blank" class="ui violet label m-padded-mini m-text-thin">电影相关</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="five wide column">
+                                <a href="#" target="_blank">
+                                    <img th:src="@{/images/kana.jpg}" alt="" class="ui rounded big image">
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui padded vertical segment m-padded-tb-large">
+                        <div class="ui mobile reversed stackable grid">
+
+                            <div class="eleven wide column">
+                                <!--博客标题-->
+                                <h3 class="ui header">再给我两分钟，让我把鸡鸡结成冰</h3>
+                                <!--博客首段-->
+                                <p class="m-text">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                                <div class="ui grid">
+                                    <div class="eleven wide column">
+                                        <div class="ui mini horizontal link list">
+                                            <div class="item">
+                                                <!--头像-->
+                                                <img src="../static/images/fentou.jpg" alt="" class="ui avatar image">
+                                                <!--名字-->
+                                                <div class="content">
+                                                    <a href="#" class="header">paksu</a>
+                                                </div>
+                                            </div>
+                                            <!--日期-->
+                                            <div class="item">
+                                                <i class="calendar icon"></i> 2020-1-1
+                                            </div>
+                                            <!--浏览量-->
+                                            <div class="item">
+                                                <i class="eye icon"></i> 9999
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="right aligned five wide column">
+                                        <a href="#" target="_blank" class="ui violet label m-padded-mini m-text-thin">电影相关</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="five wide column">
+                                <a href="#" target="_blank">
+                                    <img src="../static/images/kana.jpg" alt="" class="ui rounded big image">
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui padded vertical segment m-padded-tb-large">
+                        <div class="ui mobile reversed stackable grid">
+
+                            <div class="eleven wide column">
+                                <!--博客标题-->
+                                <h3 class="ui header">再给我两分钟，让我把鸡鸡结成冰</h3>
+                                <!--博客首段-->
+                                <p class="m-text">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                                <div class="ui grid">
+                                    <div class="eleven wide column">
+                                        <div class="ui mini horizontal link list">
+                                            <div class="item">
+                                                <!--头像-->
+                                                <img th:src="@{/images/fentou.jpg}" alt="" class="ui avatar image">
+                                                <!--名字-->
+                                                <div class="content">
+                                                    <a href="#" class="header">paksu</a>
+                                                </div>
+                                            </div>
+                                            <!--日期-->
+                                            <div class="item">
+                                                <i class="calendar icon"></i> 2020-1-1
+                                            </div>
+                                            <!--浏览量-->
+                                            <div class="item">
+                                                <i class="eye icon"></i> 9999
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="right aligned five wide column">
+                                        <a href="#" target="_blank" class="ui violet label m-padded-mini m-text-thin">电影相关</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="five wide column">
+                                <a href="#" target="_blank">
+                                    <img th:src="@{static/images/kana.jpg}" alt="" class="ui rounded big image">
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui padded vertical segment m-padded-tb-large">
+                        <div class="ui mobile reversed stackable grid">
+
+                            <div class="eleven wide column">
+                                <!--博客标题-->
+                                <h3 class="ui header">再给我两分钟，让我把鸡鸡结成冰</h3>
+                                <!--博客首段-->
+                                <p class="m-text">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                                <div class="ui grid">
+                                    <div class="eleven wide column">
+                                        <div class="ui mini horizontal link list">
+                                            <div class="item">
+                                                <!--头像-->
+                                                <img src="../static/images/fentou.jpg" alt="" class="ui avatar image">
+                                                <!--名字-->
+                                                <div class="content">
+                                                    <a href="#" class="header">paksu</a>
+                                                </div>
+                                            </div>
+                                            <!--日期-->
+                                            <div class="item">
+                                                <i class="calendar icon"></i> 2020-1-1
+                                            </div>
+                                            <!--浏览量-->
+                                            <div class="item">
+                                                <i class="eye icon"></i> 9999
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="right aligned five wide column">
+                                        <a href="#" target="_blank" class="ui violet label m-padded-mini m-text-thin">电影相关</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="five wide column">
+                                <a href="#" target="_blank">
+                                    <img src="../static/images/kana.jpg" alt="" class="ui rounded big image">
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui padded vertical segment m-padded-tb-large">
+                        <div class="ui mobile reversed stackable grid">
+
+                            <div class="eleven wide column">
+                                <!--博客标题-->
+                                <h3 class="ui header">再给我两分钟，让我把鸡鸡结成冰</h3>
+                                <!--博客首段-->
+                                <p class="m-text">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                                <div class="ui grid">
+                                    <div class="eleven wide column">
+                                        <div class="ui mini horizontal link list">
+                                            <div class="item">
+                                                <!--头像-->
+                                                <img src="../static/images/fentou.jpg" alt="" class="ui avatar image">
+                                                <!--名字-->
+                                                <div class="content">
+                                                    <a href="#" class="header">paksu</a>
+                                                </div>
+                                            </div>
+                                            <!--日期-->
+                                            <div class="item">
+                                                <i class="calendar icon"></i> 2020-1-1
+                                            </div>
+                                            <!--浏览量-->
+                                            <div class="item">
+                                                <i class="eye icon"></i> 9999
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="right aligned five wide column">
+                                        <a href="#" target="_blank" class="ui violet label m-padded-mini m-text-thin">电影相关</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="five wide column">
+                                <a href="#" target="_blank">
+                                    <img src="../static/images/kana.jpg" alt="" class="ui rounded big image">
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--footer-->
+                <div class="ui bottom attached segment">
+                    <div class="ui middle aligned two column grid">
+                        <div class="column">
+                            <a href="#" class="ui mini teal basic button">上一页</a>
+                        </div>
+                        <div class="right aligned column">
+                            <a href="#" class="ui mini teal basic button">下一页</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--右边卡片栏-->
+            <div class="five wide column">
+                <!--分类-->
+                <div class="ui segments">
+                    <div class="ui secondary segment">
+                        <!--卡片标题-->
+                        <div class="ui two column grid">
+                            <div class="column">
+                                <i class="idea icon"></i>分类
+                            </div>
+                            <div class="right aligned column">
+                                <a href="#" target="_blank">more <i class="angle double right icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--卡片内容-->
+                    <div class="ui teal segment">
+                        <div class="ui fluid vertical menu">
+                            <a href="#" class="item">
+                                学习笔记
+                                <div class="ui teal basic left pointing label">12</div>
+                            </a>
+                            <a href="#" class="item">
+                                学习笔记
+                                <div class="ui teal basic left pointing label">12</div>
+                            </a>
+                            <a href="#" class="item">
+                                学习笔记
+                                <div class="ui teal basic left pointing label">12</div>
+                            </a>
+                            <a href="#" class="item">
+                                学习笔记
+                                <div class="ui teal basic left pointing label">12</div>
+                            </a>
+                            <a href="#" class="item">
+                                学习笔记
+                                <div class="ui teal basic left pointing label">12</div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <!--标签-->
+                <div class="ui segments m-margin-top-large">
+                    <!--卡片标题-->
+                    <div class="ui secondary segment">
+                        <div class="ui two column grid">
+                            <div class="column">
+                                <i class="tags icon"></i>标签
+                            </div>
+                            <div class="right aligned column">
+                                <a href="#" target="_blank">more <i class="angle double right icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--卡片内容-->
+                    <div class="ui teal segment">
+                        <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                            SpringBoot
+                            <div class="detail">22</div>
+                        </a>
+                        <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                            SpringBoot
+                            <div class="detail">22</div>
+                        </a>
+                        <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                            Spring
+                            <div class="detail">22</div>
+                        </a>
+                        <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                            Java
+                            <div class="detail">22</div>
+                        </a>
+                        <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                            SpringBoot
+                            <div class="detail">22</div>
+                        </a>
+                    </div>
+                    <!--最新推荐-->
+                </div>
+                <!--最新推荐-->
+                <div class="ui segments m-margin-top-large">
+                    <div class="ui secondary segment ">
+                        <i class="bookmark icon"></i>最新推荐
+                    </div>
+                    <div class="ui segment">
+                        <a href="#" target="_blank" class="m-black m-text-thin">用户故事</a>
+                    </div>
+                    <div class="ui segment">
+                        <a href="#" target="_blank" class="m-black m-text-thin">用户故事</a>
+                    </div>
+                    <div class="ui segment">
+                        <a href="#" target="_blank" class="m-black m-text-thin">用户故事</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--底部footer-->
+<footer th:replace="_fragments::footer" class="ui inverted vertical segment m-padded-tb-massive">
+    <div class="ui center aligned container">
+        <div class="ui inverted divided stackable grid">
+            <div class="three wide column">
+                <div class="ui inverted link list">
+                    <div class="item">
+                        <img th:src="@{/images/bear.jpg}" class="ui rounded image" alt="" style="width: 110px">
+                    </div>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced">最新博客</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">呜呜呜</a>
+                    <a href="#" class="item">讷讷讷</a>
+                    <a href="#" class="item">嗷嗷嗷</a>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced">联系我</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">呜呜呜</a>
+                    <a href="#" class="item">讷讷讷</a>
+                    <a href="#" class="item">嗷嗷嗷</a>
+                </div>
+            </div>
+            <div class="seven wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced">介绍</h4>
+                <p class="m-text-thin m-text-spaced m-opacity-mini">嗨的味道我知道</p>
+            </div>
+        </div>
+        <div class="ui inverted section divider"></div>
+        <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright © 1998 - 2020 paksu.</p>
+    </div>
+</footer>
+
+<!--/*/<th:block th:replace="fragments::script">/*/-->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<!--/*/</th:block>/*/-->
+<script>
+    /*手机端导航栏缩放*/
+    $('.menu.toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide');
+    });
+</script>
+</body>
+</html>

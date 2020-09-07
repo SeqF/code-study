@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="08180524-fb8c-471e-89ae-0538a693c1b6" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\coding\.m2\repository" />
+        <option name="mavenHome" value="$USER_HOME$/Maven/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="E:\coding\.m2\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="1.8" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8" />
+    <option name="vmOptions" value="-DarchetypeCatalog=internal" />
+  </component>
+  <component name="ProjectId" id="1cJPp5kAf86o3UuHtFzSFd8xLJc" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../The_Quibbler" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RunManager" selected="Spring Boot.Springboot04WebRestfulcrudApplication">
+    <configuration name="ProviderServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="provider-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.study.ProviderServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShiroSpringbootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="shiro_springboot" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.study.ShiroSpringbootApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Springboot03LoggingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot_03_logging" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.study.springboot_03_logging.Springboot03LoggingApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Springboot04WebRestfulcrudApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot_04_web_restfulcrud" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.study.springboot.Springboot04WebRestfulcrudApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Springboot07SecurityApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot_07_security" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.study.springboot.Springboot07SecurityApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Springboot08MybatisApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot_08_mybatis" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.study.springboot.Springboot08MybatisApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Springboot09SwaggerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot_09_swagger" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.study.swagger.Springboot09SwaggerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="08180524-fb8c-471e-89ae-0538a693c1b6" name="Default Changelist" comment="" />
+      <created>1590243902806</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590243902806</updated>
+      <workItem from="1590243904142" duration="71000" />
+      <workItem from="1591942865634" duration="817000" />
+      <workItem from="1591943846447" duration="97000" />
+      <workItem from="1591943957848" duration="151000" />
+      <workItem from="1591944345332" duration="106000" />
+      <workItem from="1591944956535" duration="14000" />
+      <workItem from="1591945824567" duration="227000" />
+      <workItem from="1591946092592" duration="610000" />
+      <workItem from="1591971849657" duration="15000" />
+      <workItem from="1592118931784" duration="338000" />
+      <workItem from="1592120396978" duration="83000" />
+      <workItem from="1592379779414" duration="285000" />
+      <workItem from="1592380453754" duration="7306000" />
+      <workItem from="1592572221708" duration="39000" />
+      <workItem from="1592572455282" duration="17000" />
+      <workItem from="1592640290587" duration="94000" />
+      <workItem from="1592654118418" duration="467000" />
+      <workItem from="1592654894229" duration="699000" />
+      <workItem from="1592657602161" duration="205000" />
+      <workItem from="1592659432456" duration="115000" />
+      <workItem from="1592711773165" duration="106000" />
+      <workItem from="1592727173166" duration="956000" />
+      <workItem from="1592795321176" duration="137000" />
+      <workItem from="1592892449991" duration="1240000" />
+      <workItem from="1594608617450" duration="801000" />
+      <workItem from="1598187164485" duration="1164000" />
+      <workItem from="1598280633611" duration="368000" />
+      <workItem from="1599063644885" duration="285000" />
+      <workItem from="1599372901740" duration="74000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="975" y="229" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1591946470222">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="975" y="229" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591946470222" />
+    <state x="414" y="369" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1591943979469">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="369" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591943979469" />
+    <state x="1134" y="251" key="FileChooserDialogImpl" timestamp="1599372972891">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1134" y="251" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1599372972891" />
+    <state width="1160" height="219" key="GridCell.Tab.0.bottom" timestamp="1592659547894">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1160" height="219" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592659547894" />
+    <state width="1160" height="219" key="GridCell.Tab.0.center" timestamp="1592659547894">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1160" height="219" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592659547894" />
+    <state width="1160" height="219" key="GridCell.Tab.0.left" timestamp="1592659547894">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1160" height="219" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592659547894" />
+    <state width="1160" height="219" key="GridCell.Tab.0.right" timestamp="1592659547894">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1160" height="219" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592659547894" />
+    <state width="1160" height="219" key="GridCell.Tab.1.bottom" timestamp="1592659547894">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1160" height="219" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592659547894" />
+    <state width="1160" height="219" key="GridCell.Tab.1.center" timestamp="1592659547894">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1160" height="219" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592659547894" />
+    <state width="1160" height="219" key="GridCell.Tab.1.left" timestamp="1592659547894">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1160" height="219" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592659547894" />
+    <state width="1160" height="219" key="GridCell.Tab.1.right" timestamp="1592659547894">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1160" height="219" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592659547894" />
+    <state x="786" y="113" key="SettingsEditor" timestamp="1591946261190">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="786" y="113" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1591946261190" />
+  </component>
+</project>

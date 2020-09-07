@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.study.mapper.TeacherMapper">
+
+    <!--按结果嵌套查询 选择这种舒服点-->
+    <select id="getTeacher" resultMap="TeacherStudent">
+        select s.id sid,s.name sname,t.name tname,t.id tid
+        from student s , teacher t
+        where s.tid = t.id and t.id=#{tid}
+    </select>
+
+    <resultMap id="TeacherStudent" type="teacher">
+        <result column="tid" property="id"/>
+        <result column="tname" property="name"/>
+        <!--集合中的javatype改为oftype-->
+        <collection property="students" ofType="student" >
+            <result column="sid" property="id"/>
+            <result column="sname" property="name"/>
+            <result column="tid" property="tid"/>
+        </collection>
+    </resultMap>
+
+    <!--===========================================================================-->
+
+    <!--按查询嵌套-->
+
+    <select id="getTeacher2" resultMap="TeacherStudent2">
+        select * from teacher where id=#{tid}
+    </select>
+
+    <resultMap id="TeacherStudent2" type="teacher">
+        <collection property="students" column="id" javaType="ArrayList" ofType="Student" select="getStudentByTeacherId"/>
+    </resultMap>
+
+    <select id="getStudentByTeacherId" resultType="student" >
+        select * from student where tid = #{tid}
+    </select>
+
+
+</mapper>
+

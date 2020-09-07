@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" xmlns:th="http://www.thymeleaf.org">
+
+
+<!--顶部导航栏-->
+<nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow" th:fragment="navbar">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Movie data analysis and visualization</a>
+<!--    <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">-->
+    <ul class="navbar-nav px-3">
+    </ul>
+</nav>
+
+
+<!--侧边栏-->
+<nav class="col-md-2 d-none d-md-block bg-light sidebar" th:fragment="sidebar">
+    <div class="sidebar-sticky">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a th:class="${active=='main.html'?'nav-link active':'nav-link'}" th:href="@{/main.html}">
+                    <span data-feather="home"></span>
+                    高分电影数量趋势
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a th:class="${active=='typetrend.html'?'nav-link active':'nav-link'}" th:href="@{/showTypeTrend}">
+                    <span data-feather="bar-chart-2"></span>
+                    电影类型数量趋势
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a th:class="${active=='list.html'?'nav-link active':'nav-link'}" th:href="@{'/showTop50/'+${2019}}">
+                    <span data-feather="bar-chart-2"></span>
+                    年度TOP50电影清单
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a th:class="${active=='typeavgpoint.html'?'nav-link active':'nav-link'}" th:href="@{/showAvgPoint}">
+                    <span data-feather="bar-chart-2"></span>
+                    各电影类型的数量与IMDB平均分统计
+                </a>
+            </li>
+
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <span data-feather="bar-chart-2"></span>
+                    电影的IMDB评分与Meta评分的正态分布
+                </a>
+            </li>
+            <li class="nav-item">
+                <a th:class="${active=='stuffavgpoint.html'?'nav-link active':'nav-link'}"th:href="@{/showStuffAvgPoint}">
+                    <span data-feather="bar-chart-2"></span>
+                    主演、导演执导电影的数量及其平均分
+                </a>
+            </li>
+            <li class="nav-item">
+                <a th:class="${active=='topstuff.html'?'nav-link active':'nav-link'}" th:href="@{/showTopStuff}">
+                    <span data-feather="bar-chart-2"></span>
+                    参与高分电影的主演、导演
+                </a>
+            </li>
+        </ul>
+
+<!--        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">-->
+<!--            <span>Saved reports</span>-->
+<!--            <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">-->
+<!--                <span data-feather="plus-circle"></span>-->
+<!--            </a>-->
+<!--        </h6>-->
+<!--        <ul class="nav flex-column mb-2">-->
+<!--            <li class="nav-item">-->
+<!--                <a class="nav-link" href="#">-->
+<!--                    <span data-feather="file-text"></span>-->
+<!--                    Current month-->
+<!--                </a>-->
+<!--            </li>-->
+<!--            <li class="nav-item">-->
+<!--                <a class="nav-link" href="#">-->
+<!--                    <span data-feather="file-text"></span>-->
+<!--                    Last quarter-->
+<!--                </a>-->
+<!--            </li>-->
+<!--            <li class="nav-item">-->
+<!--                <a class="nav-link" href="#">-->
+<!--                    <span data-feather="file-text"></span>-->
+<!--                    Social engagement-->
+<!--                </a>-->
+<!--            </li>-->
+<!--            <li class="nav-item">-->
+<!--                <a class="nav-link" href="#">-->
+<!--                    <span data-feather="file-text"></span>-->
+<!--                    Year-end sale-->
+<!--                </a>-->
+<!--            </li>-->
+<!--        </ul>-->
+    </div>
+</nav>
+</html>

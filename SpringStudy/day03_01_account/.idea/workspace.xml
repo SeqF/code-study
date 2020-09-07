@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a7f66fe0-b62f-40bc-8f58-c648976a6538" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$USER_HOME$/Maven/apache-maven-3.6.3" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8" />
+    <option name="vmOptions" value="-DarchetypeCatalog=internal" />
+  </component>
+  <component name="ProjectId" id="1XIUdCVafNPA1c4ZNEWV2zkr256" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../SpringbootStudy/springboot_08_mybatis" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.study.service.impl" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\50547\IdeaProjects\test\day03_01_account\src\test\java" />
+      <recent name="C:\Users\50547\IdeaProjects\test\day03_01_account\src\main\resources" />
+      <recent name="C:\Users\50547\IdeaProjects\test\day03_01_account\src\main\java" />
+      <recent name="C:\Users\50547\IdeaProjects\test\day03_01_account" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.AccountServiceTest">
+    <configuration name="AccountServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day03_01_account" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.study.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.study.test" />
+      <option name="MAIN_CLASS_NAME" value="com.study.test.AccountServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountServiceTest.testTransfer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day03_01_account" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.study.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.study.test" />
+      <option name="MAIN_CLASS_NAME" value="com.study.test.AccountServiceTest" />
+      <option name="METHOD_NAME" value="testTransfer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AccountServiceTest" />
+        <item itemvalue="JUnit.AccountServiceTest.testTransfer" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a7f66fe0-b62f-40bc-8f58-c648976a6538" name="Default Changelist" comment="" />
+      <created>1580733187956</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580733187956</updated>
+      <workItem from="1580733189309" duration="5568000" />
+      <workItem from="1580740140686" duration="513000" />
+      <workItem from="1580783774578" duration="639000" />
+      <workItem from="1580837606396" duration="4746000" />
+      <workItem from="1580842669082" duration="1173000" />
+      <workItem from="1581052666090" duration="9651000" />
+      <workItem from="1581511161957" duration="1412000" />
+      <workItem from="1581512593645" duration="2331000" />
+      <workItem from="1581755987103" duration="2604000" />
+      <workItem from="1581770199695" duration="541000" />
+      <workItem from="1583775285715" duration="269000" />
+      <workItem from="1583812999487" duration="1851000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1075" y="184" key="#Project_Structure" timestamp="1580733239873">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1075" y="184" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1580733239873" />
+    <state x="1265" y="239" key="#com.intellij.ide.util.MemberChooser" timestamp="1581053100953">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1265" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1581053100953" />
+    <state x="347" y="198" key="FileChooserDialogImpl" timestamp="1583827234363">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="347" y="198" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1583827234363" />
+    <state width="1877" height="447" key="GridCell.Tab.0.bottom" timestamp="1581770740794">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="447" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581770740794" />
+    <state width="1877" height="447" key="GridCell.Tab.0.center" timestamp="1581770740794">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="447" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581770740794" />
+    <state width="1877" height="447" key="GridCell.Tab.0.left" timestamp="1581770740794">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="447" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581770740794" />
+    <state width="1877" height="447" key="GridCell.Tab.0.right" timestamp="1581770740794">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="447" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581770740794" />
+    <state x="841" y="160" width="977" height="785" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1581770330324">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="841" y="160" width="977" height="785" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581770330324" />
+    <state x="570" y="250" key="new project wizard" timestamp="1583826017279">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="570" y="250" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1583826017279" />
+    <state x="1123" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1580838602072">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1123" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580838602072" />
+    <state x="295" y="175" key="spring file set editor" timestamp="1581512924495">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="295" y="175" key="spring file set editor/0.0.1920.1040@0.0.1920.1040" timestamp="1581512924495" />
+  </component>
+</project>

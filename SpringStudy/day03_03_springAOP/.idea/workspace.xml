@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a9dc1807-2f51-4825-b569-a2aa671054e0" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$USER_HOME$/Maven/apache-maven-3.6.3" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8" />
+    <option name="vmOptions" value="-DarchetypeCatalog=internal" />
+  </component>
+  <component name="ProjectId" id="1XTqEL15h6bhIoU8uBX384bb68j" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../day03_05_annoAOP" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+  </component>
+  <component name="RunManager">
+    <configuration name="AOPTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.study.test.AOPTest" />
+      <module name="day03_03_springAOP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.study.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AOPTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a9dc1807-2f51-4825-b569-a2aa671054e0" name="Default Changelist" comment="" />
+      <created>1581080318140</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581080318140</updated>
+      <workItem from="1581080319460" duration="4454000" />
+      <workItem from="1581340428444" duration="1835000" />
+      <workItem from="1581342284593" duration="1974000" />
+      <workItem from="1581442095425" duration="994000" />
+      <workItem from="1581488579911" duration="651000" />
+      <workItem from="1581755877525" duration="10000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="682" y="190" key="#Notifications" timestamp="1581342508919">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="682" y="190" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1581342508919" />
+    <state x="1104" y="186" key="#Project_Structure" timestamp="1581340561948">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1104" y="186" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1581340561948" />
+    <state x="1382" y="340" key="#com.intellij.ide.util.MemberChooser" timestamp="1581081285307">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1382" y="340" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1581081285307" />
+    <state x="1104" y="281" key="FileChooserDialogImpl" timestamp="1581489676439">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1104" y="281" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1581489676439" />
+    <state width="1877" height="271" key="GridCell.Tab.0.bottom" timestamp="1581489677578">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="271" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581489677578" />
+    <state width="1877" height="271" key="GridCell.Tab.0.center" timestamp="1581489677577">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="271" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581489677577" />
+    <state width="1877" height="271" key="GridCell.Tab.0.left" timestamp="1581489677577">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="271" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581489677577" />
+    <state width="1877" height="271" key="GridCell.Tab.0.right" timestamp="1581489677577">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="271" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581489677577" />
+    <state width="1117" height="325" key="GridCell.Tab.1.bottom" timestamp="1581350697303">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1117" height="325" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581350697303" />
+    <state width="1117" height="325" key="GridCell.Tab.1.center" timestamp="1581350697303">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1117" height="325" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581350697303" />
+    <state width="1117" height="325" key="GridCell.Tab.1.left" timestamp="1581350697303">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1117" height="325" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581350697303" />
+    <state width="1117" height="325" key="GridCell.Tab.1.right" timestamp="1581350697303">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1117" height="325" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581350697303" />
+    <state x="570" y="163" key="SettingsEditor" timestamp="1581080691489">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="570" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1581080691489" />
+    <state x="1023" y="307" width="897" height="606" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1581343303480">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1023" y="307" width="897" height="606" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040@0.0.1920.1040" timestamp="1581343303480" />
+    <state x="987" y="247" width="672" height="678" key="search.everywhere.popup" timestamp="1581340889056">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="987" y="247" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1581340889056" />
+  </component>
+</project>

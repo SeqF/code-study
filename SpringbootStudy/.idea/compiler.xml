@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springboot_04_web_restfulcrud" />
+        <module name="shiro_springboot" />
+        <module name="springboot_07_security" />
+        <module name="provider-server" />
+        <module name="springboot_08_mybatis" />
+        <module name="hello_shiro" />
+        <module name="springboot_03_logging" />
+        <module name="springboot_09_swagger" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="hello_shiro" target="1.8" />
+      <module name="provider-server" target="1.8" />
+      <module name="shiro_springboot" target="1.8" />
+      <module name="springboot_03_logging" target="1.8" />
+      <module name="springboot_04_web_restfulcrud" target="1.8" />
+      <module name="springboot_07_security" target="1.8" />
+      <module name="springboot_08_mybatis" target="1.8" />
+      <module name="springboot_08_shiro" target="1.8" />
+      <module name="springboot_09_swagger" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="provider-server" options="-parameters" />
+      <module name="shiro_springboot" options="-parameters" />
+      <module name="springboot_03_logging" options="-parameters" />
+      <module name="springboot_04_web_restfulcrud" options="-parameters" />
+      <module name="springboot_07_security" options="-parameters" />
+      <module name="springboot_08_mybatis" options="-parameters" />
+      <module name="springboot_09_swagger" options="-parameters" />
+    </option>
+  </component>
+</project>

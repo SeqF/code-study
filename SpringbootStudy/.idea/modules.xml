@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/SpringbootStudy.iml" filepath="$PROJECT_DIR$/.idea/SpringbootStudy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot_08_shiro/hello_shiro/hello_shiro.iml" filepath="$PROJECT_DIR$/springboot_08_shiro/hello_shiro/hello_shiro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo+zookeeper/provider-server/provider-server.iml" filepath="$PROJECT_DIR$/dubbo+zookeeper/provider-server/provider-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot_08_shiro/shiro_springboot/shiro_springboot.iml" filepath="$PROJECT_DIR$/springboot_08_shiro/shiro_springboot/shiro_springboot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot_03_logging/springboot_03_logging.iml" filepath="$PROJECT_DIR$/springboot_03_logging/springboot_03_logging.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot_04_web_restfulcrud/springboot_04_web_restfulcrud.iml" filepath="$PROJECT_DIR$/springboot_04_web_restfulcrud/springboot_04_web_restfulcrud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot_07_security/springboot_07_security.iml" filepath="$PROJECT_DIR$/springboot_07_security/springboot_07_security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot_08_mybatis/springboot_08_mybatis.iml" filepath="$PROJECT_DIR$/springboot_08_mybatis/springboot_08_mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot_08_shiro/springboot_08_shiro.iml" filepath="$PROJECT_DIR$/springboot_08_shiro/springboot_08_shiro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot_09_swagger/springboot_09_swagger.iml" filepath="$PROJECT_DIR$/springboot_09_swagger/springboot_09_swagger.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a769234c-b82a-48b7-8aac-6ae3ebed692b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$USER_HOME$/Maven/apache-maven-3.6.3" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8" />
+    <option name="vmOptions" value="-DarchetypeCatalog=internal" />
+  </component>
+  <component name="ProjectId" id="1XqcWoTcfV9yArJKNOYjEwTevxm" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\50547\IdeaProjects\test\day04_04_tx\src\test" />
+      <recent name="C:\Users\50547\IdeaProjects\test\day04_04_tx\src\main\java\com\study\service" />
+      <recent name="C:\Users\50547\IdeaProjects\test\day04_04_tx\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.AccountServiceTest">
+    <configuration name="AccountServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day04_04_tx" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.study.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.study.test" />
+      <option name="MAIN_CLASS_NAME" value="com.study.test.AccountServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountServiceTest.testTransfer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day04_04_tx" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.study.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.study.test" />
+      <option name="MAIN_CLASS_NAME" value="com.study.test.AccountServiceTest" />
+      <option name="METHOD_NAME" value="testTransfer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AccountServiceTest" />
+        <item itemvalue="JUnit.AccountServiceTest.testTransfer" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a769234c-b82a-48b7-8aac-6ae3ebed692b" name="Default Changelist" comment="" />
+      <created>1581777099096</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581777099096</updated>
+      <workItem from="1581777100389" duration="2366000" />
+      <workItem from="1581825484426" duration="1440000" />
+      <workItem from="1581857896374" duration="2219000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1363" y="247" key="#com.intellij.ide.util.MemberChooser" timestamp="1581778229745">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1363" y="247" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1581778229745" />
+    <state x="1258" y="303" key="FileChooserDialogImpl" timestamp="1581778880894">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1258" y="303" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1581778880894" />
+    <state width="1117" height="322" key="GridCell.Tab.0.bottom" timestamp="1581860347247">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1117" height="322" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581860347247" />
+    <state width="1117" height="322" key="GridCell.Tab.0.center" timestamp="1581860347246">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1117" height="322" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581860347246" />
+    <state width="1117" height="322" key="GridCell.Tab.0.left" timestamp="1581860347246">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1117" height="322" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581860347246" />
+    <state width="1117" height="322" key="GridCell.Tab.0.right" timestamp="1581860347246">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1117" height="322" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581860347246" />
+    <state width="1117" height="322" key="GridCell.Tab.1.bottom" timestamp="1581860347247">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1117" height="322" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581860347247" />
+    <state width="1117" height="322" key="GridCell.Tab.1.center" timestamp="1581860347247">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1117" height="322" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581860347247" />
+    <state width="1117" height="322" key="GridCell.Tab.1.left" timestamp="1581860347247">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1117" height="322" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581860347247" />
+    <state width="1117" height="322" key="GridCell.Tab.1.right" timestamp="1581860347247">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1117" height="322" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581860347247" />
+    <state x="1167" y="258" width="672" height="678" key="search.everywhere.popup" timestamp="1581858136700">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1167" y="258" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1581858136700" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/study/test/AccountServiceTest.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
