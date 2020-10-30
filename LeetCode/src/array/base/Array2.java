@@ -30,7 +30,7 @@ public class Array2 {
                 count++;
                 return true;
             }
-            //与其他数组比较并挪动位置   (用二分查找最后一个小于和第一个大于）
+            //与其他数组比较并挪动位置   (查找最后一个小于value的元素，如果没有则插入到尾部）
             for (int i = 0; i < array.length; i++) {
                 if(value>=array[i]){
                     for (int j =count-1;j>=i+1;j--){
@@ -75,14 +75,57 @@ public class Array2 {
         return -1;
     }
 
+    /**
+     * 查找最后一个小于value的元素
+     */
+    public int bSearch(int value){
+        int low=0;
+        int high=array.length-1;
+        while (low<=high){
+            int mid=low+((high-low)>>1);
+            if(array[mid]>value){
+                high=mid-1;
+            }else{
+                if ((mid==array.length-1)||(array[mid+1]>=value)) {
+                    return mid;
+                }else {
+                    low=mid+1;
+                }
+            }
+        }
+        return -1;
+    }
+
     public void print(){
         for (int i=0;i<count;i++){
             System.out.print(array[i]+" ");
         }
+        System.out.println();
     }
 
     public static void main(String[] args) {
-        Array2 array2 = new Array2(5);
-        
+//        Array2 array2 = new Array2(5);
+//        array2.insert(1);
+//        array2.insert(3);
+//        array2.insert(6);
+//        array2.insert(20);
+//        array2.insert(30);
+//
+//        array2.print();
+//        System.out.println();
+//        array2.delete(1);
+//        array2.insert(9);
+//
+//        array2.print();
+        Array2 array2=new Array2(5);
+        array2.insert(1);
+        array2.insert(2);
+        array2.insert(2);
+        array2.insert(2);
+        array2.insert(3);
+
+        array2.print();
+        int i =array2.bSearch(3);
+        System.out.println(array2.bSearch(3));
     }
 }
