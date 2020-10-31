@@ -123,7 +123,7 @@ public class Array2 {
         array2.insert(2);
         array2.insert(2);
         array2.insert(3);
-
+//这是master修改的
         array2.print();
         int i =array2.bSearch(3);
         System.out.println(array2.bSearch(3));
