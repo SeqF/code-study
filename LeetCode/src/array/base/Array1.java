@@ -48,6 +48,7 @@ public class Array1 {
             array.data[i]="key"+i;
             array.count++;
         }
+        //这是master修改
         System.out.println(array.size);
         array.append("key5");
         System.out.println(array.size);
