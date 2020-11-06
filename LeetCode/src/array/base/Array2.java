@@ -5,9 +5,9 @@ package array.base;
  * 注意：有序
  */
 public class Array2 {
-    private int[] array;
-    private int count;
-    private int length;
+    public int[] array;
+    public int count;
+    public int length;
     public Array2(int capacity){
         array = new int[capacity];
         count=0;
@@ -103,29 +103,4 @@ public class Array2 {
         System.out.println();
     }
 
-    public static void main(String[] args) {
-//        Array2 array2 = new Array2(5);
-//        array2.insert(1);
-//        array2.insert(3);
-//        array2.insert(6);
-//        array2.insert(20);
-//        array2.insert(30);
-//
-//        array2.print();
-//        System.out.println();
-//        array2.delete(1);
-//        array2.insert(9);
-//
-//        array2.print();
-        Array2 array2=new Array2(5);
-        array2.insert(1);
-        array2.insert(2);
-        array2.insert(2);
-        array2.insert(2);
-        array2.insert(3);
-//这是master修改的
-        array2.print();
-        int i =array2.bSearch(3);
-        System.out.println(array2.bSearch(3));
-    }
 }
