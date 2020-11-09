@@ -1,5 +1,6 @@
 package array.leetcode;
 
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -15,12 +16,30 @@ import java.util.List;
  *   [-1, -1, 2]
  * ]
  *
+ * 思路：
+ * 将三数之和转换为两数之和
+ *  即：a+b+c=0 --> a+b=-c
  */
 public class LeetCode_15 {
 
-    public List<List<Integer>> threeSum(int[] nums){
+    public static List<List<Integer>> threeSum(int[] nums){
 
+        List<List<Integer>> result = null;
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = i+1; j < nums.length; j++) {
+                if (nums[i]+nums[j]==0){
+                    for (int q = j+1; q < nums.length; q++) {
+                        if (nums[q]==0){
+                            result.add( Arrays.asList(nums[i],nums[j],nums[q]));
+                        }
+                    }
+                }else if(nums[i]+nums[j]>0){
 
+                }else {
+
+                }
+            }
+        }
         return null;
     }
 }
