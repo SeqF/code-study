@@ -34,5 +34,6 @@ public class Solution {
 
         int[] nums= new int[]{-1, 0, 1, 2, -1, -4};
         LeetCode_15.threeSum2(nums);
+        System.out.println(LeetCode_15.threeSum3(nums));
     }
 }
