@@ -3,6 +3,7 @@ package array;
 import array.base.Array1;
 import array.base.Array2;
 import array.leetcode.LeetCode_1;
+import array.leetcode.LeetCode_15;
 
 public class Solution {
 
@@ -26,9 +27,12 @@ public class Solution {
 //        int i =array2.bSearch(3);
 //        System.out.println(array2.bSearch(3));
 
-        int[] nums=new int[]{2,7,11,15};
-        for (int i : LeetCode_1.twoSum(nums, 9)) {
-            System.out.println(i);
-        }
+//        int[] nums=new int[]{2,7,11,15};
+//        for (int i : LeetCode_1.twoSum(nums, 9)) {
+//            System.out.println(i);
+//        }
+
+        int[] nums= new int[]{-1, 0, 1, 2, -1, -4};
+        LeetCode_15.threeSum2(nums);
     }
 }
