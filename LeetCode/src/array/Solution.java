@@ -4,6 +4,7 @@ import array.base.Array1;
 import array.base.Array2;
 import array.leetcode.LeetCode_1;
 import array.leetcode.LeetCode_15;
+import array.leetcode.LeetCode_169;
 
 public class Solution {
 
@@ -32,8 +33,11 @@ public class Solution {
 //            System.out.println(i);
 //        }
 
-        int[] nums= new int[]{-1, 0, 1, 2, -1, -4};
-        LeetCode_15.threeSum2(nums);
-        System.out.println(LeetCode_15.threeSum3(nums));
+//        int[] nums= new int[]{-1, 0, 1, 2, -1, -4};
+//        LeetCode_15.threeSum2(nums);
+//        System.out.println(LeetCode_15.threeSum3(nums));
+
+        int[] nums = new int[]{2, 2, 1, 1, 1, 1, 2, 2};
+        System.out.println(LeetCode_169.majorityElement(nums));
     }
 }

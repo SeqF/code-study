@@ -19,7 +19,27 @@ public class LeetCode_1 {
      * @param target 目标值
      * @return 符合条件的元素的数组下标
      */
-    public static int[] twoSum(int[] nums, int target) {
+    public static int[] twoSum1(int[] nums, int target) {
+        int[] result = new int[2];
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = i + 1; j < nums.length; j++) {
+                if (target == nums[i] + nums[j]) {
+                    result[0] = i;
+                    result[1] = j;
+                    return result;
+                }
+            }
+        }
+        return result;
+    }
+
+    /**
+     * 创建一个hash表
+     * @param nums
+     * @param target
+     * @return
+     */
+    public static int[] twoSum2(int[] nums, int target) {
         int[] result = new int[2];
         for (int i = 0; i < nums.length; i++) {
             for (int j = i + 1; j < nums.length; j++) {

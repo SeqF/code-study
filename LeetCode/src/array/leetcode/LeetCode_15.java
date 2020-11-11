@@ -103,8 +103,12 @@ public class LeetCode_15 {
                 } else {
                     result.add(Arrays.asList(nums[i], nums[b], nums[c]));
                     //相同的值直接略过,去重
-                    while (b < c && nums[b] == nums[b + 1]) b++;
-                    while (b < c && nums[c] == nums[c - 1]) c--;
+                    while (b < c && nums[b] == nums[b + 1]) {
+                        b++;
+                    }
+                    while (b < c && nums[c] == nums[c - 1]) {
+                        c--;
+                    }
                     b++;
                     c--;
                 }
