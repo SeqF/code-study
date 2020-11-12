@@ -16,7 +16,12 @@ import java.util.*;
  */
 public class LeetCode_169 {
 
-    public static int majorityElement(int[] nums) {
+    /**
+     * 尝试用map存储对应的元素及其计数，然后用map来找出最大值
+     * @param nums
+     * @return
+     */
+    public static int majorityElement1(int[] nums) {
 
         int count = 0;
         Arrays.sort(nums);
@@ -31,14 +36,13 @@ public class LeetCode_169 {
                 count=0;
             }
         }
-//        int max=map.entrySet().stream().max(Map.Entry.comparingByValue()).get().getKey();
-        Collection<Integer> counts = map.values();
-        Object[] array = counts.toArray();
-        Arrays.sort(array);
-        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
-            if (entry.getValue().equals(array[array.length-1])){
-
-            }
-        }
+        int max=map.entrySet().stream().max(Map.Entry.comparingByValue()).get().getKey();
+        return max;
     }
+
+    /**
+     * 摩尔投票法：
+     *  就是选取一个数，默认为是众数，遇到相同的元素就+1，不同的元素就-1；当计数为0，将众数换为下一个元素
+     *  思想就是，
+     */
 }
