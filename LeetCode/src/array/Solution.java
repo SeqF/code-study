@@ -37,7 +37,7 @@ public class Solution {
 //        LeetCode_15.threeSum2(nums);
 //        System.out.println(LeetCode_15.threeSum3(nums));
 
-        int[] nums = new int[]{2, 2, 1, 1, 1, 1, 2, 2};
-        System.out.println(LeetCode_169.majorityElement(nums));
+        int[] nums = new int[]{2, 2, 1, 1, 3, 3, 2, 2, 2};
+        System.out.println(LeetCode_169.majorityElement2(nums));
     }
 }
