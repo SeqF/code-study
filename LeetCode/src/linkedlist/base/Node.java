@@ -9,7 +9,7 @@ public class Node {
 
     public int data;
 
-    private Node next;
+    public Node next;
 
     public Node(){
     }
