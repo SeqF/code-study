@@ -21,8 +21,23 @@ package array.leetcode;
  */
 public class LeetCode_41 {
 
-    public static int firstMissingPositive(int[] nums) {
+    /**
+     * 思路：先遍历数组找出最小值，然后判断最小值是否大于0，且-1是否>0，然后继续遍历查找有无最小值
+     *
+     * @param nums
+     * @return
+     */
+    private LeetCode_41() {
 
+    }
+
+    public static int firstMissingPositive(int[] nums) {
+        if (nums == null || nums.length == 0) {
+            return 1;
+        }
+        for (int i = 0; i < nums.length; i++) {
+            
+        }
         return 1;
     }
 }
