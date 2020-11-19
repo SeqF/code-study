@@ -24,7 +24,7 @@ public class LeetCode_41 {
     /**
      * 思路：先遍历数组找出最小值，然后判断最小值是否大于0，且-1是否>0，然后继续遍历查找有无最小值
      *
-     * @param nums
+     * @param
      * @return
      */
     private LeetCode_41() {
@@ -36,8 +36,17 @@ public class LeetCode_41 {
             return 1;
         }
         for (int i = 0; i < nums.length; i++) {
-            
+            while (nums[i] > 0 && nums[i] <=nums.length) {
+                int temp = nums[i];
+                nums[i] = nums[nums[i]-1];
+                nums[nums[i]] = temp;
+            }
         }
-        return 1;
+        for (int j = 0; j < nums.length; j++) {
+            if (nums[j] != j+1) {
+                return j+1;
+            }
+        }
+        return nums.length + 1;
     }
 }

@@ -5,6 +5,7 @@ import array.base.Array2;
 import array.leetcode.LeetCode_1;
 import array.leetcode.LeetCode_15;
 import array.leetcode.LeetCode_169;
+import array.leetcode.LeetCode_41;
 
 public class Solution {
 
@@ -37,7 +38,10 @@ public class Solution {
 //        LeetCode_15.threeSum2(nums);
 //        System.out.println(LeetCode_15.threeSum3(nums));
 
-        int[] nums = new int[]{2, 2, 1, 1, 3, 3, 2, 2, 2};
-        System.out.println(LeetCode_169.majorityElement2(nums));
+//        int[] nums = new int[]{2, 2, 1, 1, 3, 3, 2, 2, 2};
+//        System.out.println(LeetCode_169.majorityElement2(nums));
+
+        int[] nums = new int[]{3, 4, -1, 1};
+        System.out.println(LeetCode_41.firstMissingPositive(nums));
     }
 }
