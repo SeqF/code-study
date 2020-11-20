@@ -22,7 +22,13 @@ package array.leetcode;
 public class LeetCode_41 {
 
     /**
-     * 思路：先遍历数组找出最小值，然后判断最小值是否大于0，且-1是否>0，然后继续遍历查找有无最小值
+     *         hash碰撞检测法
+     *
+     * 思路：遍历一次数组，将大于0且小于数组长度的元素放在数组响应下标的位置上，
+     * 然后再遍历一次数组，当下标与存储的元素不符时，此下标就是缺少的最小整数
+     *
+     *  i => 数组的下标
+     *  nums[i] => 数组下标对应的正确数值
      *
      * @param
      * @return
@@ -36,17 +42,21 @@ public class LeetCode_41 {
             return 1;
         }
         for (int i = 0; i < nums.length; i++) {
-            while (nums[i] > 0 && nums[i] <=nums.length) {
+            // <=0、>nums.length和重复的元素 不用进行移动
+            // 符合条件的元素则放到响应的数组位置上
+            while (nums[i] > 0 && nums[i] <= nums.length && nums[i] != nums[nums[i] - 1]) {
                 int temp = nums[i];
-                nums[i] = nums[nums[i]-1];
-                nums[nums[i]] = temp;
+                nums[i] = nums[nums[i] - 1];
+                nums[temp - 1] = temp;
             }
         }
+        //再次对数组进行一次遍历，不在对应位置上的元素时，返回其数组下标+1，即是该位置上对应的数值
         for (int j = 0; j < nums.length; j++) {
-            if (nums[j] != j+1) {
-                return j+1;
+            if (nums[j] != j + 1) {
+                return j + 1;
             }
         }
         return nums.length + 1;
     }
+
 }
