@@ -7,7 +7,7 @@ import javax.sound.midi.SoundbankResource;
  */
 public class SingleLinkedList {
 
-    public static Node head = new Node();
+    private static Node head;
 
     /**
      * 查询链表长度

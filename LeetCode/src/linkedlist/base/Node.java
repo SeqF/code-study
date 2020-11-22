@@ -1,7 +1,7 @@
 package linkedlist.base;
 
 /**
- * 链表节点:
+ * 单链表节点:
  * 1、数据域
  * 2、指针域
  */
