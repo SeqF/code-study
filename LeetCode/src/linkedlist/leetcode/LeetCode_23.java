@@ -46,4 +46,50 @@ public class LeetCode_23 {
         }
         return null;
     }
+
+    public void merge(Node[] a,int low,int mid,int high){
+
+        Node list = a[0];
+
+        Node temp = new Node();
+
+        if(list.next!=null){
+            temp.next=list.next;
+            list.next=null;
+        }
+
+        int count=0;
+        Node p=temp.next;
+        Node q=temp.next;
+        Node m;
+        Node r=list;
+        while (p.next!=null){
+            p=p.next;
+            count++;
+            if(count==mid){
+                m=p;
+            }
+            if(count>mid){
+                if(q.data<=p.data){
+                    Node node = new Node();
+                    node.data=q.data;
+                    node.next=null;
+                    r.next=node;
+                }else {
+                    Node node=new Node();
+                    node.data=p.data;
+                    node.next=null;
+                    r.next=node;
+                }
+            }
+        }
+
+        while (q!=m){
+            m.next=null;
+            r.next=q;
+        }
+
+        while (p)
+
+    }
 }
