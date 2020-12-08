@@ -162,6 +162,29 @@ public class SingleLinkedList {
     }
 
     /**
+     * 递归实现两链表合并
+     * @param l1
+     * @param l2
+     * @return
+     */
+    public static Node mergeTwoLists(Node l1,Node l2){
+        if (l1 == null){
+            return l2;
+        }
+        if (l2 == null){
+            return l1;
+        }
+
+        if (l1.data < l2.data) {
+            l1.next = mergeTwoLists(l1.next, l2);
+            return l1;
+        } else {
+            l2.next = mergeTwoLists(l1,l2.next);
+            return l2;
+        }
+    }
+
+    /**
      * 求链表的中间节点
      * 思路：使用双指针，先求出链表的长度，然后求出中间值，
      *      然后进行计数，当计数>=中间值时，另一个指针开始，那么当第一个指针遍历到尾部时，第二指针指向向的就是中间节点
