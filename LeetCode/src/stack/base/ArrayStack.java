@@ -2,7 +2,7 @@ package stack.base;
 
 /**
  * 用数组实现一个顺序栈
- *
+ * <p>
  * 20,155,232,844,224,682,496.
  */
 public class ArrayStack {
@@ -21,7 +21,19 @@ public class ArrayStack {
         this.count = 0;
     }
 
-    //入栈操作
+    /**
+     * 判空
+     * @return
+     */
+    public boolean isEmpty() {
+        return this.count == 0;
+    }
+
+    /**
+     * 入栈
+     * @param item
+     * @return
+     */
     public boolean push(String item) {
 
         //栈满，不能入栈
@@ -34,14 +46,25 @@ public class ArrayStack {
         return true;
     }
 
-    //出栈操作
+    /**
+     * 出栈
+     * @return
+     */
     public String pop() {
         if (count == 0) {
             return null;
         }
-        String tmp = items[count-1];
+        String tmp = items[count - 1];
         --count;
         return tmp;
+    }
+
+    /**
+     * 获得栈顶元素
+     * @return
+     */
+    public String peek(){
+        return items[count-1];
     }
 
 }
