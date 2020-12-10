@@ -22,7 +22,7 @@ package array.leetcode;
 public class LeetCode_41 {
 
     /**
-     *         hash碰撞检测法
+     * hash碰撞检测法
      *
      * 思路：遍历一次数组，将大于0且小于数组长度的元素放在数组响应下标的位置上，
      * 然后再遍历一次数组，当下标与存储的元素不符时，此下标就是缺少的最小整数
@@ -33,17 +33,13 @@ public class LeetCode_41 {
      * @param
      * @return
      */
-    private LeetCode_41() {
-
-    }
-
     public static int firstMissingPositive(int[] nums) {
         if (nums == null || nums.length == 0) {
             return 1;
         }
         for (int i = 0; i < nums.length; i++) {
             // <=0、>nums.length和重复的元素 不用进行移动
-            // 符合条件的元素则放到响应的数组位置上
+            // 符合条件的元素则放到相应的数组位置上（交换）
             while (nums[i] > 0 && nums[i] <= nums.length && nums[i] != nums[nums[i] - 1]) {
                 int temp = nums[i];
                 nums[i] = nums[nums[i] - 1];
