@@ -1,5 +1,6 @@
 package stack.leetcode;
 
+import java.awt.*;
 import java.util.Stack;
 
 /**
@@ -27,35 +28,61 @@ public class LeetCode_32 {
      */
     public int longestValidParentheses(String s) {
 
-        if (s.isEmpty()) {
-            return 0;
-        }
-        Stack<Character> stack = new Stack<>();
+        Stack<Integer> stack = new Stack<>();
+        int[] mark = new int[s.length()];
         char[] chars = s.toCharArray();
         int count = 0;
         int max = 0;
+        for (int i = 0; i < mark.length; i++) {
+            mark[i] = 0;
+        }
+        /**
+         * 存储左括号
+         */
         for (int i = 0; i < chars.length; i++) {
-            if (stack.isEmpty()) {
-                stack.push(chars[i]);
+            if ('(' == chars[i]) {
+                //只存储左括号
+                //记录左括号的位置
+                stack.push(i);
             } else {
-                if (')' == chars[i] && '(' == stack.peek()) {
-                    count++;
+                //多余的右括号舍去.并标记
+                if (stack.empty()) {
+                    //当栈为空时加入的右括号都是无效匹配
+                    mark[i] = 1;
                 } else {
-                    if (count > max) {
-                        max = count;
-                    }
-                    count = 0;
+                    //由于只存储左括号，右括号加入时一定匹配
+                    stack.pop();
                 }
-                stack.push(chars[i]);
             }
         }
-        max = count >= max ? count : max;
-        return max * 2;
+
+        /**
+         * 处理剩下的左括号
+         */
+        while (!stack.isEmpty()) {
+            //遍历结束后，剩下的左括号都是无效匹配
+            mark[stack.peek()] = 1;
+            stack.pop();
+        }
+
+        /**
+         * 查找标记的最大长度
+         */
+        for (int i = 0; i < mark.length; i++) {
+            if (mark[i] == 1) {
+                count = 0;
+                continue;
+            }
+            count++;
+            max = Math.max(max, count);
+        }
+        return max;
     }
 
     public static void main(String[] args) {
         LeetCode_32 leetCode32 = new LeetCode_32();
-        String test = "(()";
-        System.out.println(leetCode32.longestValidParentheses(test) == 2);
+        String test = "()(())";
+        System.out.println(leetCode32.longestValidParentheses(test) == 6);
+
     }
 }
