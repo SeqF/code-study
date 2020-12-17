@@ -57,19 +57,29 @@ public class LeetCode_150 {
      */
     public int evalRPN(String[] tokens) {
 
-        Stack<String> stack = new Stack<>();
-        int sum = 0;
-        for (int i = 0; i < tokens.length; i++) {
-            if ("+".equals(tokens[i]) || "-".equals(tokens[i]) ||"*".equals(tokens[i]) || "/".equals(tokens[i])) {
-                int a = Integer.parseInt(stack.pop());
-                int b = Integer.parseInt(stack.pop());
-                sum = a;
-                stack.push(String.valueOf(sum));
-            } else {
-                stack.push(tokens[i]);
+        Stack<Integer> stack = new Stack<>();
+        for (String token : tokens) {
+            switch (token) {
+                case "+":
+                    stack.push(stack.pop() + stack.pop());
+                    break;
+                case "-":
+                    stack.push(-stack.pop() + stack.pop());
+                    break;
+                case "*":
+                    stack.push(stack.pop() * stack.pop());
+                    break;
+                case "/":
+                    int b = stack.pop();
+                    int a = stack.pop();
+                    stack.push(a / b);
+                    break;
+                default:
+                    stack.push(Integer.valueOf(token));
+                    break;
             }
         }
-        return sum;
+        return stack.peek();
     }
 
     public static void main(String[] args) {
