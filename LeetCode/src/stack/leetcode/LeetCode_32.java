@@ -22,6 +22,7 @@ public class LeetCode_32 {
 
     /**
      * 跟用栈判断括号匹配类似的思路，再匹配成功出栈后进行计数
+     * 如果沿用括号匹配的思想，难点在于count置0的时机
      *
      * @param s
      * @return
