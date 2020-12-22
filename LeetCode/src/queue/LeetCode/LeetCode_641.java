@@ -140,15 +140,15 @@ public class LeetCode_641 {
         circularDeque.insertLast(3);
         circularDeque.insertLast(4);
         circularDeque.insertFront(4);
-        System.out.println(circularDeque.insertLast(9));
-        System.out.println(circularDeque.insertLast(9));
-        System.out.println(circularDeque.insertFront(9));
-        System.out.println(circularDeque.insertFront(9));
-        System.out.println(circularDeque.getRear());
-        System.out.println(circularDeque.isFull());
-        System.out.println(circularDeque.deleteLast());
-        System.out.println(circularDeque.insertFront(9));
-        System.out.println(circularDeque.getFront());
+//        System.out.println(circularDeque.insertLast(9));
+//        System.out.println(circularDeque.insertLast(9));
+//        System.out.println(circularDeque.insertFront(9));
+//        System.out.println(circularDeque.insertFront(9));
+//        System.out.println(circularDeque.getRear());
+//        System.out.println(circularDeque.isFull());
+//        System.out.println(circularDeque.deleteLast());
+//        System.out.println(circularDeque.insertFront(9));
+//        System.out.println(circularDeque.getFront());
         for (int i = 0; i < circularDeque.size; i++) {
             System.out.print(circularDeque.data[i]);
         }
