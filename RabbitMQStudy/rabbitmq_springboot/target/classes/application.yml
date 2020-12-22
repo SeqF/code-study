@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: rabbitmq_springboot
+  rabbitmq:
+    host: 120.79.33.152
+    port: 5672
+    username: icarus
+    password: 123456
+    virtual-host: /icarus
+
