@@ -70,8 +70,9 @@ public class LeetCode_239 {
         Iterator<Integer> iterator = queue.iterator();
         Integer max=iterator.next();
         while (iterator.hasNext()){
-            if(max.compareTo(iterator.next())<0){
-                max=iterator.next();
+            Integer temp=iterator.next();
+            if(max.compareTo(temp)<0){
+                max=temp;
             }
         }
         return max;
@@ -79,7 +80,9 @@ public class LeetCode_239 {
 
     public static void main(String[] args) {
         int[] nums = {1, 3, -1, -3, 5, 3, 6, 7};
-        System.out.print(LeetCode_239.maxSlidingWindow(nums, 3));
+        for (int i : LeetCode_239.maxSlidingWindow(nums, 3)) {
+            System.out.print(i+" ");
+        }
     }
 
 }
