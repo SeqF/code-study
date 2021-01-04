@@ -84,6 +84,40 @@ public class LeetCode_239 {
         return maxs;
     }
 
+
+    /**
+     * 窗口维持成一个单调递减的双向队列，
+     * @param nums
+     * @param k
+     * @return
+     */
+    public static int[] maxSlidingWindow2(int[] nums, int k) {
+
+        if (nums == null || nums.length < 2) {
+            return nums;
+        }
+
+        LinkedList<Integer> queue = new LinkedList<>();
+
+        int[] result = new int[nums.length - k + 1];
+
+        for (int i = 0; i < nums.length; i++) {
+            while (!queue.isEmpty() && nums[queue.peekLast()] <= nums[i]) {
+                queue.pollLast();
+            }
+            queue.addLast(i);
+
+            if (queue.peek() <= i - k) {
+                queue.poll();
+            }
+
+            if(i+1>=k){
+                result[i+1-k]=nums[queue.peek()];
+            }
+        }
+        return result;
+    }
+
     public static int findMax(Queue<Integer> queue) {
 
         Iterator<Integer> iterator = queue.iterator();
@@ -102,8 +136,8 @@ public class LeetCode_239 {
         int[] test1 = {1, 3, -1, -3, 5, 3, 6, 7};
         // expect: 5 3 4
         int[] test2 = {5, 3, 4};
-        int windowSize = 3;
-        for (int i : LeetCode_239.maxSlidingWindow(test1, windowSize)) {
+        int windowSize = 1;
+        for (int i : LeetCode_239.maxSlidingWindow(test2, windowSize)) {
             System.out.print(i + " ");
         }
     }
