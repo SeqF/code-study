@@ -86,7 +86,12 @@ public class LeetCode_239 {
 
 
     /**
-     * 窗口维持成一个单调递减的双向队列，
+     * 窗口维持成一个单调递减的双向队列，最大值保持在队头，在窗口移动时，数组中的值与队尾元素进行比较
+     * 1.比队尾大的，队内元素依次出队，直到遇到比数值大的元素
+     * 2.比队尾小的，直接入队
+     * 每次移动滑动窗口，就要将队头元素记录，然后再其弹出，对下一个数组元素进行入队操作
+     * (滑动窗口内保存的是数组的下标，这样在判定滑动窗口是否启动，以及取值都十分方便）
+     *
      * @param nums
      * @param k
      * @return
@@ -97,22 +102,26 @@ public class LeetCode_239 {
             return nums;
         }
 
-        LinkedList<Integer> queue = new LinkedList<>();
-
-        int[] result = new int[nums.length - k + 1];
+        Deque<Integer> window = new LinkedList<>();
+        int length = nums.length;
+        int[] result = new int[length - k + 1];
 
         for (int i = 0; i < nums.length; i++) {
-            while (!queue.isEmpty() && nums[queue.peekLast()] <= nums[i]) {
-                queue.pollLast();
+            //1.队头的出队处理
+            //i-k为当前滑动窗口头部所要在的最小位置，当滑动窗口的头部元素位置比i-k还小时，说明滑动窗口还没进行过清理，要超出窗口范围
+            //判断最大值下标是否越界
+            if (!window.isEmpty() && window.getFirst() < (i - k + 1)) {
+                window.pollFirst();
             }
-            queue.addLast(i);
-
-            if (queue.peek() <= i - k) {
-                queue.poll();
+            //2.对于队尾的淘汰处理,将小于数组元素的队列元素出队
+            while (!window.isEmpty() && nums[i] >= nums[window.peekLast()]) {
+                window.pollLast();
             }
-
-            if(i+1>=k){
-                result[i+1-k]=nums[queue.peek()];
+            //3.对于队尾的入队处理
+            window.offer(i);
+            //4.记录队头的最大值，在滑动窗口启动后才会记录（下标从0开始，所以-1)
+            if (i>=k-1) {
+                result[i-k+1]=nums[window.getFirst()];
             }
         }
         return result;

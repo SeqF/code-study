@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea454579-e617-41d7-b33f-5b32c800bc39" name="Default Changelist" comment="" />
+    <list default="true" id="ea454579-e617-41d7-b33f-5b32c800bc39" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -21,6 +27,7 @@
     <option name="vmOptions" value="-DarchetypeCatalog=internal" />
   </component>
   <component name="ProjectId" id="1dXXaIqFQsRsSATrfBksTmcNfrU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -28,9 +35,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../blog" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="ServiceViewManager">
@@ -57,6 +65,8 @@
       <updated>1592572473247</updated>
       <workItem from="1592572474620" duration="1152000" />
       <workItem from="1592622606717" duration="631000" />
+      <workItem from="1608043199868" duration="1039000" />
+      <workItem from="1608130335990" duration="77000" />
     </task>
     <servers />
   </component>
@@ -64,17 +74,9 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="973" y="431" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1592572820015">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1608130407061">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="973" y="431" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592572820015" />
-    <state x="359" y="302" key="FileChooserDialogImpl" timestamp="1592622642754">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="359" y="302" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1592622642754" />
-    <state x="628" y="184" key="SettingsEditor" timestamp="1592572553061">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="628" y="184" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1592572553061" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1608130407061" />
   </component>
 </project>
