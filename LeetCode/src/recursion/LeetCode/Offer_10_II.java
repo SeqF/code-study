@@ -29,8 +29,12 @@ public class Offer_10_II {
      * 那n级台阶的所有走法则是走了1步之后的走法加上走了2步之后的走法
      * 即 f(n)=f(n-1)+f(n-2)  ======> 递归公式
      * 终止条件则为 f(1)=1,f(2)=2，只剩下一级台阶时只有一种走法，剩下两级台阶时，可选择走一步，或者走两步，有两种走法
+     *
      * 直接递归会造成超时，要用记忆化递归
      * https://leetcode-cn.com/problems/qing-wa-tiao-tai-jie-wen-ti-lcof/solution/mian-shi-ti-10-ii-qing-wa-tiao-tai-jie-wen-ti-dong/
+     *
+     * 动态规划为最佳解法
+     *
      * @param n
      * @return
      */
