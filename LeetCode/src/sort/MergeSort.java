@@ -2,6 +2,8 @@ package sort;
 
 /**
  * 归并排序
+ *
+ * @author paksu
  */
 public class MergeSort {
 
@@ -9,8 +11,8 @@ public class MergeSort {
 
         //新建一个B数组来保存A数组中的元素
         int[] b = new int[]{};
-
         int k;
+
         //将A数组中的元素放入B数组中
         for (k = low; k <= high; k++) {
             b[k] = a[k];
