@@ -4,18 +4,32 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
+ * 快速排序
+ *
  * @author paksu
  */
 public class QuickSort {
 
+    /**
+     * 快速排序算法：如果要排序数组中 下标从p到r之间的一组数据，我们选择p到r之间的任意一个数据作为pivot(分区点)
+     * 遍历p到r之间的数据，将小于pivot的放到左边，将大于pivot的放到右边，将pivot放到中间。
+     * 这样，数组p到r之间的数据就被分成了三个部分，前面p到q-q之间的都是小于pivot的，中间是pivot，后面的q+1到r之间是大于pivot的，
+     * 运用递归的思想，直到区间缩小为1，则排序完成
+     *
+     * 是原地、不稳定的算法，时间复杂度为(nlogn)
+     *
+     * @param a
+     * @param n
+     */
     public void quickSort(int[] a, int n) {
-        quickSortC(a, 0, n-1);
+        quickSortC(a, 0, n - 1);
     }
 
     public void quickSortC(int[] a, int p, int r) {
         if (p >= r) {
             return;
         }
+        //重点是这个分区方法
         int q = partition(a, p, r);
         quickSortC(a, p, q - 1);
         quickSortC(a, q + 1, r);
