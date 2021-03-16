@@ -90,6 +90,7 @@ public class BinarySearch {
                  * 有两种情况来判断：
                  *   1、当mid=0，即为数组第一个元素时，那找到的数据就为第一个
                  *   2、当 mid的前一个下标的值不等于value时，找到的数据就为第一个
+                 * 如果都不符合，就往前继续查找
                  */
                 if ((mid == 1) || (a[mid - 1] != value)) {
                     return mid;
@@ -117,6 +118,7 @@ public class BinarySearch {
                  * 有两种情况来判断：
                  *   1、当mid=n-1，即为数组第一个元素时，那找到的数据就为最后一个元素
                  *   2、当 mid的后一个下标的值不等于value时，找到的数据就为最后一个
+                 * 如果都不符合，就往后继续查找
                  */
                 if ((mid == n - 1) || (a[mid + 1] != value)) {
                     return mid;
