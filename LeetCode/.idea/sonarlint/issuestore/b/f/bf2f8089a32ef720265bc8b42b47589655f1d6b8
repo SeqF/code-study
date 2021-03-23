@@ -1,14 +1,14 @@
 
 E
 java:S3740D"/Provide the parametrized type for this generic.(Úæ€Ý
-E
-java:S3740D"/Provide the parametrized type for this generic.(Úæ€Ý
 g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÞÆþïùÿÿÿÿ
-J
-java:S1128"4Remove this unused import 'java.lang.reflect.Array'.(‡¡É˜
-U
-java:S1118":Add a private constructor to hide the implicit public one.(ÞÆþïùÿÿÿÿ
-S	java:S106)"9Replace this use of System.out or System.err by a logger.(®ýáëûÿÿÿÿ
-S	java:S106G"9Replace this use of System.out or System.err by a logger.(®ýáëûÿÿÿÿ
 h
 java:S3776T"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(ª»Ô¢
+S	java:S106)"9Replace this use of System.out or System.err by a logger.(®ýáëûÿÿÿÿ
+S	java:S106G"9Replace this use of System.out or System.err by a logger.(®ýáëûÿÿÿÿ
+E
+java:S3740D"/Provide the parametrized type for this generic.(Úæ€Ý
+U
+java:S1118":Add a private constructor to hide the implicit public one.(ÞÆþïùÿÿÿÿ
+J
+java:S1128"4Remove this unused import 'java.lang.reflect.Array'.(‡¡É˜

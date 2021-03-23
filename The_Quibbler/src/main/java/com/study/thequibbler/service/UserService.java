@@ -2,6 +2,7 @@ package com.study.thequibbler.service;
 
 import com.study.thequibbler.entity.User;
 import com.baomidou.mybatisplus.extension.service.IService;
+import org.springframework.stereotype.Service;
 
 /**
  * <p>
@@ -11,6 +12,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @author Paksu
  * @since 2020-07-13
  */
+@Service
 public interface UserService extends IService<User> {
 
 }

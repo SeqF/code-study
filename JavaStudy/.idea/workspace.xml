@@ -1,7 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="541f3df7-d2cd-4890-8b6d-0a6aa199a328" name="Default Changelist" comment="" />
+    <list default="true" id="541f3df7-d2cd-4890-8b6d-0a6aa199a328" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../SpringbootStudy/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../The_Quibbler/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../The_Quibbler/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LeetCode/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LeetCode/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LeetCode/.idea/sonarlint/issuestore/2/1/21ad737553785a3a9e6db9b5b73801e0d0a55a8d" beforeDir="false" afterPath="$PROJECT_DIR$/../LeetCode/.idea/sonarlint/issuestore/2/1/21ad737553785a3a9e6db9b5b73801e0d0a55a8d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LeetCode/.idea/sonarlint/issuestore/a/5/a580d94ead37800ca4cdb8cc18d5b4a0215dd40d" beforeDir="false" afterPath="$PROJECT_DIR$/../LeetCode/.idea/sonarlint/issuestore/a/5/a580d94ead37800ca4cdb8cc18d5b4a0215dd40d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LeetCode/.idea/sonarlint/issuestore/b/f/bf2f8089a32ef720265bc8b42b47589655f1d6b8" beforeDir="false" afterPath="$PROJECT_DIR$/../LeetCode/.idea/sonarlint/issuestore/b/f/bf2f8089a32ef720265bc8b42b47589655f1d6b8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LeetCode/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../LeetCode/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LeetCode/out/production/LeetCode/META-INF/LeetCode.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringbootStudy/.idea/SpringbootStudy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringbootStudy/.idea/SpringbootStudy.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringbootStudy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringbootStudy/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringbootStudy/springboot_02_config/src/main/resources/bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringbootStudy/springboot_02_config/src/main/resources/bean.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringbootStudy/springboot_02_config/target/classes/bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringbootStudy/springboot_02_config/target/classes/bean.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../The_Quibbler/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../The_Quibbler/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../The_Quibbler/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../The_Quibbler/.idea/libraries/Maven__com_baomidou_mybatis_plus_generator_3_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../The_Quibbler/.idea/libraries/Maven__com_puppycrawl_tools_checkstyle_8_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../The_Quibbler/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_8_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../The_Quibbler/.idea/libraries/Maven__commons_cli_commons_cli_1_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../The_Quibbler/.idea/libraries/Maven__net_sf_saxon_Saxon_HE_9_8_0_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../The_Quibbler/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../The_Quibbler/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../The_Quibbler/.idea/libraries/Maven__org_apache_shiro_shiro_core_1_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../The_Quibbler/.idea/libraries/Maven__org_apache_shiro_shiro_spring_1_4_0_RC2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../The_Quibbler/.idea/libraries/Maven__org_apache_shiro_shiro_spring_boot_web_starter_1_4_0_RC2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../The_Quibbler/.idea/libraries/Maven__org_apache_shiro_shiro_web_1_4_0_RC2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../The_Quibbler/.idea/libraries/Maven__org_crazycake_shiro_redis_3_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../The_Quibbler/.idea/libraries/Maven__org_crazycake_shiro_redis_spring_boot_starter_3_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../The_Quibbler/.idea/libraries/Maven__redis_clients_jedis_3_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../The_Quibbler/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../The_Quibbler/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../The_Quibbler/The_Quibbler.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../The_Quibbler/The_Quibbler.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../The_Quibbler/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../The_Quibbler/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../The_Quibbler/src/main/java/com/study/thequibbler/CodeGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../The_Quibbler/src/main/java/com/study/thequibbler/config/ShiroConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../The_Quibbler/src/main/java/com/study/thequibbler/shiro/AccountRealm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../The_Quibbler/src/main/java/com/study/thequibbler/shiro/JwtFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../The_Quibbler/src/main/java/com/study/thequibbler/shiro/JwtToken.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../The_Quibbler/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../The_Quibbler/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../The_Quibbler/target/classes/com/study/thequibbler/CodeGenerator$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../The_Quibbler/target/classes/com/study/thequibbler/CodeGenerator$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../The_Quibbler/target/classes/com/study/thequibbler/CodeGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../The_Quibbler/target/classes/com/study/thequibbler/shiro/AccountRealm.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,6 +102,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.NeverCaught" />
@@ -65,6 +120,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -79,11 +135,23 @@
       <workItem from="1591339553063" duration="782000" />
       <workItem from="1591543327087" duration="1346000" />
       <workItem from="1591858115686" duration="9000" />
+      <workItem from="1615022554952" duration="63000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1603958991152">

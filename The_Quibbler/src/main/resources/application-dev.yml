@@ -1,12 +1,14 @@
 # DataSource Config
 spring:
+  server:
+    port: 8080
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/blog?serverTimezone=GMT&useUnicode=true&characterEncoding=utf8
-    username: root
-    password: root
+    username: paksu
+    password: Gundam00
     type: com.alibaba.druid.pool.DruidDataSource
-    #druid Êı¾İÔ´×¨ÓĞÅäÖÃ
+    #druid
     initialSize: 5
     minIdle: 5
     maxActive: 5
@@ -19,13 +21,29 @@ spring:
     testOnReturn: false
     poolPreparedStatements: true
 
-    #ÅäÖÃ¼à¿ØÍ³¼ÆÀ¹½ØµÄfilters.stat:¼à¿ØÍ³¼Æ¡¢log4j£ºÈÕÖ¾¼ÇÂ¼¡¢wall£º·ÀÓùsql×¢Èë
-    #Èç¹ûÔÊĞíÊ±±¨´í  java.lang.ClassNotFoundException:org.apache.log4j.Priority
-    #Ôòµ¼Èëlog4jÒÀÀµ¼´¿É
+    #log4j
     filters: stat,wall,log4j
     maxPoolPrepareStatementPerConnectionSize: 20
     useGlobalDataSourceStat: true
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
+  #redisé…ç½®
+  redis:
+    #é…ç½®è¿æ¥æ± å±æ€§
+    jedis:
+      pool:
+        min-idle: 5
+        max-active: 10
+        max-idle: 10
+        max-wait: 2000
+    #é…ç½®æœåŠ¡å™¨å±æ€§
+    database: 0
+    host: 120.79.33.152
+    port: 6379
+    password: Gundam00
+    timeout: 1000
+  cache:
+    type: redis
+    cache-names: redisCache
 
 mybatis-plus:
   mapper-locations: classpath*:/mapper/**Mapper.xml

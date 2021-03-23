@@ -1,7 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4ee6c74-c8d1-4a3f-ab96-6d680b94612c" name="Default Changelist" comment="" />
+    <list default="true" id="e4ee6c74-c8d1-4a3f-ab96-6d680b94612c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../SpringbootStudy/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_lettuce_lettuce_core_5_3_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_50_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_50_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_50_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_50_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_50_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_50_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_3_3_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_2_3_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_3_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_2_3_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_2_3_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_5_2_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/1/51c7b7d973f3bd6cc7bc922890be8cd99666ee98" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/thequibbler/controller/RedisController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/thequibbler/listener/UserListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaStudy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaStudy/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LeetCode/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LeetCode/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LeetCode/.idea/sonarlint/issuestore/2/1/21ad737553785a3a9e6db9b5b73801e0d0a55a8d" beforeDir="false" afterPath="$PROJECT_DIR$/../LeetCode/.idea/sonarlint/issuestore/2/1/21ad737553785a3a9e6db9b5b73801e0d0a55a8d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LeetCode/.idea/sonarlint/issuestore/a/5/a580d94ead37800ca4cdb8cc18d5b4a0215dd40d" beforeDir="false" afterPath="$PROJECT_DIR$/../LeetCode/.idea/sonarlint/issuestore/a/5/a580d94ead37800ca4cdb8cc18d5b4a0215dd40d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LeetCode/.idea/sonarlint/issuestore/b/f/bf2f8089a32ef720265bc8b42b47589655f1d6b8" beforeDir="false" afterPath="$PROJECT_DIR$/../LeetCode/.idea/sonarlint/issuestore/b/f/bf2f8089a32ef720265bc8b42b47589655f1d6b8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LeetCode/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../LeetCode/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LeetCode/out/production/LeetCode/META-INF/LeetCode.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LeetCode/src/test/TestStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LeetCode/src/test/TestStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringbootStudy/.idea/SpringbootStudy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringbootStudy/.idea/SpringbootStudy.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringbootStudy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringbootStudy/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringbootStudy/springboot_02_config/src/main/resources/bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringbootStudy/springboot_02_config/src/main/resources/bean.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringbootStudy/springboot_02_config/target/classes/bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringbootStudy/springboot_02_config/target/classes/bean.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cn_hutool_hutool_all_5_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_generator_3_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_puppycrawl_tools_checkstyle_8_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_8_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_cli_commons_cli_1_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_saxon_Saxon_HE_9_8_0_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_core_1_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_spring_1_4_0_RC2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_spring_boot_web_starter_1_4_0_RC2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_web_1_4_0_RC2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_crazycake_shiro_redis_3_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_crazycake_shiro_redis_spring_boot_starter_3_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_3_3_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_3_5_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/The_Quibbler.iml" beforeDir="false" afterPath="$PROJECT_DIR$/The_Quibbler.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/thequibbler/CodeGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/thequibbler/ThequibblerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/thequibbler/ThequibblerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/thequibbler/config/ShiroConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/thequibbler/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/thequibbler/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/thequibbler/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/thequibbler/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/thequibbler/shiro/AccountRealm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/thequibbler/shiro/JwtFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/thequibbler/shiro/JwtToken.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/study/thequibbler/ThequibblerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/study/thequibbler/ThequibblerApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/study/thequibbler/CodeGenerator$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/study/thequibbler/CodeGenerator$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/study/thequibbler/CodeGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/study/thequibbler/ThequibblerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/study/thequibbler/ThequibblerApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/study/thequibbler/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/study/thequibbler/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/study/thequibbler/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/study/thequibbler/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/study/thequibbler/shiro/AccountRealm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/study/thequibbler/ThequibblerApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/study/thequibbler/ThequibblerApplicationTests.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,18 +122,29 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="E:\coding\.m2\repository" />
-        <option name="mavenHome" value="$USER_HOME$/Maven/apache-maven-3.6.3" />
+        <option name="mavenHome" value="C:\Users\50547\Maven\apache-maven-3.6.3" />
         <option name="userSettingsFile" value="E:\coding\.m2\settings.xml" />
       </MavenGeneralSettings>
     </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
+    <option name="enabledProfiles">
+      <list>
+        <option value="jdk-1.8" />
+      </list>
     </option>
   </component>
   <component name="MavenRunner">
@@ -65,9 +152,9 @@
     <option name="vmOptions" value="-DarchetypeCatalog=internal" />
   </component>
   <component name="ProjectId" id="1eUuD3mmHmDIn3uVFb6hbhcIIug" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -76,11 +163,19 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -88,7 +183,7 @@
       <recent name="E:\coding\IdeaProjects\The_Quibbler\src\main\java\com\study\thequibbler" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ThequibblerApplication">
+  <component name="RunManager" selected="JUnit.ThequibblerApplicationTests.testFindById">
     <configuration name="CodeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.study.thequibbler.CodeGenerator" />
       <module name="The_Quibbler" />
@@ -102,6 +197,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ThequibblerApplicationTests.testFindById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="The_Quibbler" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.study.thequibbler.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.study.thequibbler" />
+      <option name="MAIN_CLASS_NAME" value="com.study.thequibbler.ThequibblerApplicationTests" />
+      <option name="METHOD_NAME" value="testFindById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThequibblerApplicationTests.testRedis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="The_Quibbler" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.study.thequibbler.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.study.thequibbler" />
+      <option name="MAIN_CLASS_NAME" value="com.study.thequibbler.ThequibblerApplicationTests" />
+      <option name="METHOD_NAME" value="testRedis" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ThequibblerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="The_Quibbler" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.study.thequibbler.ThequibblerApplication" />
@@ -111,6 +238,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ThequibblerApplicationTests.testFindById" />
+        <item itemvalue="JUnit.ThequibblerApplicationTests.testRedis" />
         <item itemvalue="Application.CodeGenerator" />
       </list>
     </recent_temporary>
@@ -127,6 +256,7 @@
       </list>
     </option>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -145,72 +275,32 @@
       <workItem from="1598146576929" duration="1149000" />
       <workItem from="1598184366819" duration="3944000" />
       <workItem from="1599372985051" duration="2370000" />
+      <workItem from="1614867673952" duration="4181000" />
+      <workItem from="1616168432058" duration="16785000" />
+      <workItem from="1616322976412" duration="4626000" />
+      <workItem from="1616420403453" duration="4050000" />
+      <workItem from="1616467219927" duration="7226000" />
+      <workItem from="1616485691876" duration="4571000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="716" y="357" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594619777173">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="716" y="357" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594619777173" />
-    <state x="961" y="220" width="390" height="579" key="#com.intellij.ide.util.MemberChooser" timestamp="1599375169616">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="961" y="220" width="390" height="579" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1599375169616" />
-    <state x="581" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1594470326497">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="581" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594470326497" />
-    <state x="1152" y="278" key="FileChooserDialogImpl" timestamp="1598187154525">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="1152" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1598187154525" />
-    <state width="873" height="161" key="GridCell.Tab.0.bottom" timestamp="1598188321666">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="873" height="161" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1598188321666" />
-    <state width="873" height="161" key="GridCell.Tab.0.center" timestamp="1598188321666">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="873" height="161" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1598188321666" />
-    <state width="873" height="161" key="GridCell.Tab.0.left" timestamp="1598188321665">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="873" height="161" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1598188321665" />
-    <state width="873" height="161" key="GridCell.Tab.0.right" timestamp="1598188321666">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="873" height="161" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1598188321666" />
-    <state width="873" height="161" key="GridCell.Tab.1.bottom" timestamp="1598188321666">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="873" height="161" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1598188321666" />
-    <state width="873" height="161" key="GridCell.Tab.1.center" timestamp="1598188321666">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="873" height="161" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1598188321666" />
-    <state width="873" height="161" key="GridCell.Tab.1.left" timestamp="1598188321666">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="873" height="161" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1598188321666" />
-    <state width="873" height="161" key="GridCell.Tab.1.right" timestamp="1598188321666">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="873" height="161" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1598188321666" />
-    <state x="495" y="350" key="Maven.ArtifactSearchDialog" timestamp="1594608592355">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="495" y="350" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594608592355" />
-    <state x="471" y="324" key="SettingsEditor" timestamp="1598147076883">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="471" y="324" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1598147076883" />
-    <state x="876" y="245" width="672" height="678" key="search.everywhere.popup" timestamp="1594562428803">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="876" y="245" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1594562428803" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

@@ -13,8 +13,8 @@ public class TestStream {
         int level2 = 2;
         int level3 = 3;
 
-        List<Integer> collect = list.stream().filter(t -> t < level1).collect(Collectors.toList()).get();
-        System.out.println(collect.get(collect.size() - 1));
+//        List<Integer> collect = list.stream().filter(t -> t < level1).collect(Collectors.toList()).get();
+//        System.out.println(collect.get(collect.size() - 1));
 
     }
 }
