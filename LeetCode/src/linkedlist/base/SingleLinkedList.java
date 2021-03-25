@@ -100,7 +100,9 @@ public class SingleLinkedList {
             return;
         }
         Node newhead = new Node();
+        //保存拆出的节点
         Node temp;
+        //遍历链表
         Node cursor = head.next;
         while (cursor != null) {
             //将旧链表的第一个节点拆出
@@ -109,6 +111,7 @@ public class SingleLinkedList {
             //将从旧链表拆出的节点用头插法插入到新的链表中
             temp.next = newhead.next;
             newhead.next = temp;
+            cursor = cursor.next;
         }
     }
 
