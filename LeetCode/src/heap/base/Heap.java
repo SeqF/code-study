@@ -8,9 +8,9 @@ package heap.base;
 public class Heap {
 
     //保存堆元素的数组，下标从1开始
-    private int[] a;
+    private final int[] a;
     //堆的大小
-    private int n;
+    private final int n;
     //堆中存在的元素个数
     private int count;
 
@@ -21,7 +21,7 @@ public class Heap {
     }
 
     /**
-     * 插入元素后，自下而上进行堆化，与父节点比较并交换
+     * 插入元素后(插入到数组最后），自下而上进行堆化，与父节点比较并交换
      *
      * @param data
      */
