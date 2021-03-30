@@ -10,7 +10,7 @@ package leetcode150.easy;
 public class LeetCode_171 {
 
     /**
-     * 26进制
+     * 26进制转10进制
      *
      * @param columnTitle
      * @return
@@ -27,8 +27,8 @@ public class LeetCode_171 {
 //                number += ((int) columnTitleChar[i] - ASCII + 1) * 26;
 //            }
 //        }
-        for (int i = length-1; i >=0; i--) {
-            number += ((int) columnTitleChar[length-1-i] - ASCII + 1) * 26;
+        for (int i = length - 1; i >= 0; i--) {
+            number += ((int) columnTitleChar[length - 1] - ASCII + 1) * (26 ^ (length - 1 - i));
         }
         return number;
     }
