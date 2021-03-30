@@ -28,7 +28,7 @@ public class LeetCode_171 {
 //            }
 //        }
         for (int i = length - 1; i >= 0; i--) {
-            number += ((int) columnTitleChar[length - 1] - ASCII + 1) * (26 ^ (length - 1 - i));
+            number += ((int) columnTitleChar[i] - ASCII + 1) * (26 ^ (length - 1 - i));
         }
         return number;
     }
