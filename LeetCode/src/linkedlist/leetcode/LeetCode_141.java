@@ -1,6 +1,6 @@
 package linkedlist.leetcode;
 
-import linkedlist.base.Node;
+import linkedlist.base.ListNode;
 
 /**
  * 给定一个链表，判断链表中是否有环。
@@ -21,12 +21,12 @@ public class LeetCode_141 {
      * @param head
      * @return
      */
-    public boolean hasCycle(Node head) {
+    public boolean hasCycle(ListNode head) {
         if (head.next == null) {
             return false;
         }
-        Node p = head;
-        Node q = head;
+        ListNode p = head;
+        ListNode q = head;
         while (p.next != null) {
             p = p.next.next;
             q = q.next;

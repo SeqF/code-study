@@ -6,7 +6,7 @@ package tree.base;
  * @author paksu
  */
 public class BinarySearchTree {
-    private Node tree;
+    private TreeNode tree;
 
     /**
      * 1、查找操作
@@ -14,8 +14,8 @@ public class BinarySearchTree {
      * @param data
      * @return
      */
-    public Node find(int data) {
-        Node p = tree;
+    public TreeNode find(int data) {
+        TreeNode p = tree;
         while (p != null) {
             if (data < p.value) {
                 p = p.left;
@@ -35,21 +35,21 @@ public class BinarySearchTree {
      */
     public void insert(int data) {
         if (tree == null) {
-            tree = new Node(data);
+            tree = new TreeNode(data);
             return;
         }
 
-        Node p = tree;
+        TreeNode p = tree;
         while (p != null) {
             if (data > p.value) {
                 if (p.right == null) {
-                    p.right = new Node(data);
+                    p.right = new TreeNode(data);
                     return;
                 }
                 p = p.right;
             } else {// data<p.data
                 if (p.left == null) {
-                    p.left = new Node(data);
+                    p.left = new TreeNode(data);
                     return;
                 }
                 p = p.left;
@@ -64,9 +64,9 @@ public class BinarySearchTree {
      */
     public void delete(int data) {
         //p指向要删除的节点，初始化指向根节点
-        Node p = tree;
+        TreeNode p = tree;
         //pp记录p的父节点
-        Node pp = null;
+        TreeNode pp = null;
 
         //查找要删除的节点
         while (p != null && p.value != data) {
@@ -86,9 +86,9 @@ public class BinarySearchTree {
             //查找右子树的最小节点
 
             //minP表示最小节点
-            Node minP = p.right;
+            TreeNode minP = p.right;
             //minPP表示minP的父节点
-            Node minPP = p;
+            TreeNode minPP = p;
             //找到右子树中的最小节点
             while (minP.left != null) {
                 minPP = minP;
@@ -102,7 +102,7 @@ public class BinarySearchTree {
         }
 
         //3.2 删除节点是叶子节点或者仅有一个子节点
-        Node child;
+        TreeNode child;
         //仅有一个子节点
         if (p.left != null) {
             child = p.left;

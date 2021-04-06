@@ -1,6 +1,6 @@
 package leetcode150.easy;
 
-import tree.base.Node;
+import tree.base.TreeNode;
 
 /**
  * 将有序数组转换为二叉搜索树
@@ -17,16 +17,16 @@ public class LeetCode_108 {
      * @param nums
      * @return
      */
-    public Node sortedArrayToBST(int[] nums) {
+    public TreeNode sortedArrayToBST(int[] nums) {
         return binarySortedArrayToBST(nums, 0, nums.length - 1);
     }
 
-    public Node binarySortedArrayToBST(int[] nums, int low, int high) {
+    public TreeNode binarySortedArrayToBST(int[] nums, int low, int high) {
         if (low > high) {
             return null;
         }
         int middle = low + ((high - low) >> 1);
-        Node root = new Node(nums[middle], null, null);
+        TreeNode root = new TreeNode(nums[middle], null, null);
         root.left = binarySortedArrayToBST(nums, low, middle - 1);
         root.right = binarySortedArrayToBST(nums, middle + 1, high);
         return root;

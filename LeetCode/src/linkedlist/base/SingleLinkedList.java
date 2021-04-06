@@ -1,23 +1,21 @@
 package linkedlist.base;
 
-import javax.sound.midi.SoundbankResource;
-
 /**
  * 实现单链表，支持增删操作
  */
 public class SingleLinkedList {
 
-    private static Node head;
+    private static ListNode head;
 
     /**
      * 查询链表长度
      *
      * @return length 链表长度
      */
-    public static int linkedListLength(Node head) {
+    public static int linkedListLength(ListNode head) {
         int length = 0;
         //长度不包含头结点
-        Node temp = head.next;
+        ListNode temp = head.next;
         while (temp != null) {
             length++;
             temp = temp.next;
@@ -32,12 +30,12 @@ public class SingleLinkedList {
      */
     public static void addNode(int data) {
 
-        Node newNode = new Node(data);
+        ListNode newListNode = new ListNode(data);
         while (head.next != null) {
-            newNode.next = head.next;
-            head.next = newNode;
+            newListNode.next = head.next;
+            head.next = newListNode;
         }
-        head.next = newNode;
+        head.next = newListNode;
     }
 
     /**
@@ -46,25 +44,25 @@ public class SingleLinkedList {
      * @param index 位置
      * @param data  数据
      */
-    public static void insertNode(Node head,int index, int data) {
+    public static void insertNode(ListNode head, int index, int data) {
 
         if (index < 1 || index > linkedListLength(head) + 1) {
             return;
         }
 
         int currentPos = 0;
-        Node temp = head;
-        Node newNode = new Node(data);
+        ListNode temp = head;
+        ListNode newListNode = new ListNode(data);
 
         while (temp.next != null) {
             if ((index - 1) == currentPos) {
-                newNode.next = temp.next;
-                temp.next = newNode;
+                newListNode.next = temp.next;
+                temp.next = newListNode;
             }
             temp = temp.next;
             currentPos++;
         }
-        temp.next = newNode;
+        temp.next = newListNode;
     }
 
     /**
@@ -72,14 +70,14 @@ public class SingleLinkedList {
      *
      * @param index 要删除的位置
      */
-    public static void deleteNode(Node head,int index) {
+    public static void deleteNode(ListNode head, int index) {
 
         if (index < 1 || index > linkedListLength(head) + 1) {
             return;
         }
 
         int currentPos = 0;
-        Node temp = head;
+        ListNode temp = head;
 
         while (temp.next != null) {
             if ((index - 1) == currentPos) {
@@ -94,16 +92,16 @@ public class SingleLinkedList {
     /**
      * 使用头插法实现单链表反转
      */
-    public static void reverse(Node head) {
+    public static void reverse(ListNode head) {
 
         if (head.next == null) {
             return;
         }
-        Node newhead = new Node();
+        ListNode newhead = new ListNode();
         //保存拆出的节点
-        Node temp;
+        ListNode temp;
         //遍历链表
-        Node cursor = head.next;
+        ListNode cursor = head.next;
         while (cursor != null) {
             //将旧链表的第一个节点拆出
             temp = cursor;
@@ -119,16 +117,16 @@ public class SingleLinkedList {
      * 两个有序链表合并成一个有序链表 (从小到大)
      * 产生新的头结点
      */
-    public static void merge(Node head1, Node head2) {
+    public static void merge(ListNode head1, ListNode head2) {
         if (head1.next == null && head2.next == null) {
             System.out.println("两个都为空链表");
         }
-        Node a = head1.next;
-        Node b = head2.next;
-        Node head3 = new Node();
+        ListNode a = head1.next;
+        ListNode b = head2.next;
+        ListNode head3 = new ListNode();
         //指向合并后链表的尾部
-        Node c = head3;
-        Node temp;
+        ListNode c = head3;
+        ListNode temp;
 
         //只要有一个链表为空时就停止遍历
         while (a != null && b != null) {
@@ -166,15 +164,16 @@ public class SingleLinkedList {
 
     /**
      * 递归实现两链表合并
+     *
      * @param l1
      * @param l2
      * @return
      */
-    public static Node mergeTwoLists(Node l1,Node l2){
-        if (l1 == null){
+    public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+        if (l1 == null) {
             return l2;
         }
-        if (l2 == null){
+        if (l2 == null) {
             return l1;
         }
 
@@ -190,23 +189,23 @@ public class SingleLinkedList {
     /**
      * 求链表的中间节点
      * 思路：使用双指针，先求出链表的长度，然后求出中间值，
-     *      然后进行计数，当计数>=中间值时，另一个指针开始，那么当第一个指针遍历到尾部时，第二指针指向向的就是中间节点
+     * 然后进行计数，当计数>=中间值时，另一个指针开始，那么当第一个指针遍历到尾部时，第二指针指向向的就是中间节点
      *
      * @return
      */
-    public static Node findMiddleNode(Node head) {
+    public static ListNode findMiddleNode(ListNode head) {
 
         int middle = linkedListLength(head) / 2;
-        int count=0;
-        Node cursor=head;
-        Node middleNode=head;
-        while (cursor.next!=null){
-            cursor=cursor.next;
+        int count = 0;
+        ListNode cursor = head;
+        ListNode middleListNode = head;
+        while (cursor.next != null) {
+            cursor = cursor.next;
             count++;
-            if(count>=middle){
-                middleNode=middleNode.next;
+            if (count >= middle) {
+                middleListNode = middleListNode.next;
             }
         }
-        return middleNode;
+        return middleListNode;
     }
 }

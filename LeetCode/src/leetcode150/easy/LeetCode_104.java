@@ -1,6 +1,6 @@
 package leetcode150.easy;
 
-import tree.base.Node;
+import tree.base.TreeNode;
 
 /**
  * 二叉树的最大深度
@@ -15,10 +15,11 @@ public class LeetCode_104 {
 
     /**
      * 递归遍历，每次访问节点前深度+1，求max和depth的最大值
+     *
      * @param root
      * @return
      */
-    public int maxDepth(Node root) {
+    public int maxDepth(TreeNode root) {
         if (root == null) {
             return 0;
         }
@@ -26,13 +27,13 @@ public class LeetCode_104 {
         return maxDepth;
     }
 
-    public void dfs(Node node, int deepth) {
-        if (node == null) {
+    public void dfs(TreeNode treeNode, int deepth) {
+        if (treeNode == null) {
             return;
         }
         deepth++;
         maxDepth = Math.max(deepth, maxDepth);
-        dfs(node.left, deepth);
-        dfs(node.right, deepth);
+        dfs(treeNode.left, deepth);
+        dfs(treeNode.right, deepth);
     }
 }

@@ -26,6 +26,7 @@ public class LeetCode_169 {
                 count--;
                 if (count <= 0) {
                     major = nums[i];
+                    //major换了之后还要将count重新计数为1
                     count = 1;
                 }
             }
