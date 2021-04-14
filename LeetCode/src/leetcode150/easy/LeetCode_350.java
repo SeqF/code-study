@@ -17,6 +17,7 @@ public class LeetCode_350 {
 
     /**
      * 哈希法，用MAP存元素出现的次数
+     *
      * @param nums1
      * @param nums2
      * @return
@@ -44,6 +45,37 @@ public class LeetCode_350 {
             }
         }
         return res;
+    }
+
+    /**
+     * 双指针
+     * 先对两个数组排序，然后对元素比较，相等时放入res数组
+     *
+     * @param nums1
+     * @param nums2
+     * @return
+     */
+    public int[] intersect2(int[] nums1, int[] nums2) {
+        Arrays.sort(nums1);
+        Arrays.sort(nums2);
+        int length1 = nums1.length;
+        int length2 = nums2.length;
+        int[] res = new int[Math.min(length1, length2)];
+        int i = 0;
+        int j = 0;
+        int index = 0;
+        while (i < length1 && j < length2) {
+            if (nums1[i] < nums2[j]) {
+                i++;
+            } else if (nums1[i] > nums2[j]) {
+                j++;
+            } else {
+                res[index++] = nums1[i];
+                i++;
+                j++;
+            }
+        }
+        return Arrays.copyOfRange(res, 0, index);
     }
 
     public static void main(String[] args) {
