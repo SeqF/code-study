@@ -1,0 +1,12 @@
+
+q
+java:S1128"TRemove this unused import 'org.springframework.data.redis.core.StringRedisTemplate'.(Á•½8—õ…î„/
+U	java:S106-"9Replace this use of System.out or System.err by a logger.(†æÇ¤8ÍÿÔî„/
+h
+java:S2259%"KA "NullPointerException" could be thrown; "queryUserList" is nullable here.(Âºí²8ÅŞî„/
+L
+java:S3740"/Provide the parametrized type for this generic.(‚Ê«8ÿĞíí„/
+U	java:S106%"9Replace this use of System.out or System.err by a logger.(Âºí²8äÁÜî„/
+L
+java:S3740#"/Provide the parametrized type for this generic.(‘Ñ¨Å8¶èØî„/
+U	java:S106'"9Replace this use of System.out or System.err by a logger.(¥®É8¦èßî„/
