@@ -1,13 +1,16 @@
 package com.quibbler.controller;
 
 
-import com.quibbler.common.lang.Result;
-import com.quibbler.entity.User;
+import com.quibbler.model.entity.User;
+import com.quibbler.utils.Result;
 import com.quibbler.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.web.bind.annotation.RestController;
+
+import static com.quibbler.utils.Result.successWithData;
 
 /**
  * <p>
@@ -18,15 +21,15 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2020-07-13
  */
 @RestController
-@RequestMapping("/thequibbler/user")
+@RequestMapping("/user")
 public class UserController {
 
     @Autowired
     UserService userService;
 
-    @RequestMapping("/index")
+    @GetMapping("/index")
     public Result index() {
-        User user = userService.getById(1);
-        return Result.success(user);
+        User user = new User();
+        return Result.successWithData(user);
     }
 }
