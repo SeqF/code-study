@@ -1,6 +1,6 @@
 package com.quibbler.service.impl;
 
-import com.quibbler.entity.Type;
+import com.quibbler.model.entity.Type;
 import com.quibbler.mapper.TypeMapper;
 import com.quibbler.service.TypeService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

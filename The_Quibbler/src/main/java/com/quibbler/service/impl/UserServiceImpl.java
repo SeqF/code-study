@@ -1,7 +1,7 @@
 package com.quibbler.service.impl;
 
 import com.quibbler.service.UserService;
-import com.quibbler.entity.User;
+import com.quibbler.model.entity.User;
 import com.quibbler.mapper.UserMapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.data.redis.core.RedisTemplate;

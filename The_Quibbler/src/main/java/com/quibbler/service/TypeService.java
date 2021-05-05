@@ -1,6 +1,6 @@
 package com.quibbler.service;
 
-import com.quibbler.entity.Type;
+import com.quibbler.model.entity.Type;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

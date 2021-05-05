@@ -1,6 +1,6 @@
 package com.quibbler.mapper;
 
-import com.quibbler.entity.User;
+import com.quibbler.model.entity.User;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

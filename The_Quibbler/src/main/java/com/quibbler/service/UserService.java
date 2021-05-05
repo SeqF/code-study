@@ -1,6 +1,6 @@
 package com.quibbler.service;
 
-import com.quibbler.entity.User;
+import com.quibbler.model.entity.User;
 import com.baomidou.mybatisplus.extension.service.IService;
 import org.springframework.stereotype.Service;
 

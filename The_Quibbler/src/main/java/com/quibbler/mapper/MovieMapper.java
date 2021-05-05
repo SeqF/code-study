@@ -1,7 +1,7 @@
 package com.quibbler.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.quibbler.entity.Movie;
+import com.quibbler.model.entity.Movie;
 
 /**
  * @author paksu

@@ -1,6 +1,6 @@
 package com.quibbler.service.impl;
 
-import com.quibbler.entity.Comment;
+import com.quibbler.model.entity.Comment;
 import com.quibbler.mapper.CommentMapper;
 import com.quibbler.service.CommentService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
