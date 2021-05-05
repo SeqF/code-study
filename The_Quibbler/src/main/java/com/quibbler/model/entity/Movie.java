@@ -1,22 +1,17 @@
-package com.quibbler.entity;
+package com.quibbler.model.entity;
 
 import com.baomidou.mybatisplus.annotation.*;
-import com.quibbler.entity.base.BaseEntity;
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.quibbler.model.entity.base.BaseEntity;
 import io.swagger.annotations.ApiModel;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.Value;
-import lombok.experimental.Accessors;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 /**
  * @author paksu
  */
 @Data
-@EqualsAndHashCode(callSuper = false)
-@Accessors(chain = true)
 @TableName("t_movie")
 @ApiModel(value = "Movie对象", description = "")
 public class Movie extends BaseEntity {
@@ -33,7 +28,8 @@ public class Movie extends BaseEntity {
 
     private String country;
 
-    private LocalDate release_time;
+    @JsonFormat(pattern = "YYYY-MM-DD")
+    private LocalDate releaseTime;
 
 
 }
