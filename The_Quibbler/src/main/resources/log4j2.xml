@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Configuration status="OFF" monitorInterval="30">
+    <Properties>
+        <Property name="pattern">%d{yyyy-MM-dd HH:mm:ss,SSS}|%p|%c|%L|%m%n</Property>
+        <Property name="logPath">logs</Property>
+    </Properties>
+    <Appenders>
+        <!--控制台输出的设置-->
+        <Console name="console" target="SYSTEM_OUT">
+            <!--指定日志的输出格式-->
+            <PatternLayout pattern="${pattern}"/>
+        </Console>
+        <!--文件输出的设置-->
+        <!--设置级别为 DEBUG 的日志输出到 debug.log 中-->
+        <RollingRandomAccessFile name="debug"
+                                 immediateFlush="false"
+                                 fileName="${logPath}/debug.log"
+                                 filePattern="${loPath}/debug-%d{yyyy-MM-dd}.log">
+            <Filters>
+                <!--设置只输出级别为debug的日志-->
+                <ThresholdFilter level="DEBUG"/>
+                <ThresholdFilter level="INFO" onMatch="DENY" onMismatch="NEUTRAL"/>
+            </Filters>
+            <PatternLayout pattern="${pattern}"/>
+            <Polices>
+                <!--按天生成日志文件-->
+                <TimeBasedTriggeringPolicy modulate="true" interval="1"/>
+            </Polices>
+            <!--最多保存日志文件的数目-->
+            <DefaultRolloverStrategy max="15"/>
+        </RollingRandomAccessFile>
+        <!--设置级别为 INFO 的日志输出到 info.log 中-->
+        <RollingRandomAccessFile name="info"
+                                 immediateFlush="false"
+                                 fileName="${logPath}/info.log"
+                                 filePattern="${logPath}/info-%d{yyyy-MM-dd}.log">
+            <Filters>
+                <ThresholdFilter level="INFO"/>
+                <ThresholdFilter level="WARN" onMatch="DENY" onMismatch="NEUTRAL"/>
+            </Filters>
+            <PatternLayout pattern="${pattern}"/>
+            <Polices>
+                <TimeBasedTriggeringPolicy modulate="true" interval="1"/>
+            </Polices>
+            <DefaultRolloverStrategy max="60"/>
+        </RollingRandomAccessFile>
+        <!--设置级别为 WARN 的日志输出到 warn.log 中-->
+        <RollingRandomAccessFile name="warn"
+                                 immediateFlush="false"
+                                 fileName="${logPath}/warn.log"
+                                 filePattern="${logPath}/warn-%d{yyyy-MM-dd}.log">
+            <Filters>
+                <ThresholdFilter level="WARN"/>
+                <ThresholdFilter level="ERROR" onMatch="DENY" onMismatch="NEUTRAL"/>
+            </Filters>
+            <PatternLayout pattern="${pattern}"/>
+            <Polices>
+                <TimeBasedTriggeringPolicy modulate="true" interval="1"/>
+            </Polices>
+            <DefaultRolloverStrategy max="60"/>
+        </RollingRandomAccessFile>
+        <!--设置级别为 ERROR 的日志输出到 error.log 中-->
+        <RollingRandomAccessFile name="error"
+                                 immediateFlush="false"
+                                 fileName="${logPath}/error.log"
+                                 filePattern="${logPath}/error-%d{yyyy-MM-dd}.log">
+            <Filters>
+                <ThresholdFilter level="ERROR"/>
+            </Filters>
+            <PatternLayout pattern="${pattern}"/>
+            <Polices>
+                <TimeBasedTriggeringPolicy modulate="true" interval="1"/>
+            </Polices>
+            <DefaultRolloverStrategy max="60"/>
+        </RollingRandomAccessFile>
+        <!--设置 task_suc 日志-->
+        <RollingRandomAccessFile name="task_suc"
+                                 immediateFlush="false"
+                                 fileName="${logPath}/task_suc.log"
+                                 filePattern="${logPath}/task_suc-%d{yyyy-MM-dd}.log">
+            <PatternLayout pattern="${pattern}"/>
+            <Polices>
+                <TimeBasedTriggeringPolicy modulate="true" interval="1"/>
+            </Polices>
+            <DefaultRolloverStrategy max="90"/>
+        </RollingRandomAccessFile>
+        <!--设置 task_fail 日志-->
+        <RollingRandomAccessFile name="task_fail"
+                                 immediateFlush="false"
+                                 fileName="${logPath}/task_fail.log"
+                                 filePattern="${logPath}/task_fail-%d{yyyy-MM-dd}.log">
+            <PatternLayout pattern="${pattern}"/>
+            <Polices>
+                <TimeBasedTriggeringPolicy modulate="true" interval="1"/>
+            </Polices>
+            <DefaultRolloverStrategy max="90"/>
+        </RollingRandomAccessFile>
+    </Appenders>
+    <Loggers>
+        <Logger name="com.quibbler" level="DEBUG" additivity="true">
+            <AppenderRef ref="debug"/>
+            <AppenderRef ref="info"/>
+            <AppenderRef ref="warn"/>
+            <AppenderRef ref="error"/>
+        </Logger>
+        <!--org.springframework 只输出 ERROR 级别以上的日志-->
+        <Logger name="org.springframework" level="ERROR"/>
+        <!--org.apache 只输出 ERROR 级别以上的日志-->
+        <Logger name="org.apache" level="ERROR"/>
+        <!-- task_suc 日志-->
+        <Logger name="task_suc" additivity="true">
+            <AppenderRef ref="task_suc"/>
+        </Logger>
+        <!-- task_fail 日志-->
+        <Logger name="task_fail" additivity="true">
+            <AppenderRef ref="task_fail"/>
+        </Logger>
+        <Root level="DEBUG">
+            <!-- 控制台输出 -->
+            <AppenderRef ref="console"/>
+        </Root>
+    </Loggers>
+</Configuration>
