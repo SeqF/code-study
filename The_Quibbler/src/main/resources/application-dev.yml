@@ -1,14 +1,12 @@
-# DataSource Config
 spring:
   server:
     port: 8080
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/blog?serverTimezone=GMT&useUnicode=true&characterEncoding=utf8
-    username: paksu
+    url: jdbc:mysql://120.79.33.152:3306/the_quibbler?serverTimezone=GMT&useUnicode=true&characterEncoding=utf8
+    username: root
     password: Gundam00
     type: com.alibaba.druid.pool.DruidDataSource
-    #druid
     initialSize: 5
     minIdle: 5
     maxActive: 5
@@ -21,21 +19,17 @@ spring:
     testOnReturn: false
     poolPreparedStatements: true
 
-    #log4j
     filters: stat,wall,log4j
     maxPoolPrepareStatementPerConnectionSize: 20
     useGlobalDataSourceStat: true
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
-  #redis配置
   redis:
-    #配置连接池属性
     jedis:
       pool:
         min-idle: 5
         max-active: 10
         max-idle: 10
         max-wait: 2000
-    #配置服务器属性
     database: 0
     host: 120.79.33.152
     port: 6379
@@ -49,3 +43,6 @@ mybatis-plus:
   mapper-locations: classpath*:/mapper/**Mapper.xml
   configuration:
     log-impl: org.apache.ibatis.logging.log4j2.Log4j2Impl
+
+logging:
+  config: classpath:log4j2.xml
