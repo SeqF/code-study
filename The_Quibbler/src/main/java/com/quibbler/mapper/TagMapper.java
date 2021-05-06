@@ -1,7 +1,7 @@
 package com.quibbler.mapper;
 
-import com.quibbler.entity.Tag;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.quibbler.model.entity.Tag;
 
 /**
  * <p>
