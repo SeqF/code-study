@@ -1,11 +1,11 @@
 package com.quibbler.service;
 
-import com.quibbler.entity.Tag;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.quibbler.model.entity.Tag;
 
 /**
  * <p>
- *  服务类
+ * 服务类
  * </p>
  *
  * @author Paksu
