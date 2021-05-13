@@ -67,8 +67,8 @@ public class Result implements Serializable{
         return resultWithData(ERROR, data);
     }
 
-    public static Result errorWithMessage(Object data,String message) {
-        return resultWithDataAndMessage(ERROR, data, message);
+    public static Result errorWithMessage(String message) {
+        return resultWithMessage(ERROR, message);
     }
 
     public static Result errorWithDataAndMessage(Object data,String message) {
