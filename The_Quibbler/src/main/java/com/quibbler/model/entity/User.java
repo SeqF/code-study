@@ -31,10 +31,9 @@ public class User extends BaseEntity {
 
     private String email;
 
-    private Integer type;
-
     private String profilePicture;
 
+    private Boolean enabled;
 
 
 }
