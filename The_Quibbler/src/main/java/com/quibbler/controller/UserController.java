@@ -6,6 +6,7 @@ import com.quibbler.utils.Result;
 import com.quibbler.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.web.bind.annotation.RestController;
@@ -31,5 +32,10 @@ public class UserController {
     public Result index() {
         User user = new User();
         return Result.successWithData(user);
+    }
+
+    @PostMapping("/login")
+    public Result userLogin() {
+        return Result.successWithMessage("Login Success");
     }
 }
