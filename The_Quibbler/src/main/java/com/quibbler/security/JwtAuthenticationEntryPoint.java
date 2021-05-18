@@ -21,6 +21,6 @@ public class JwtAuthenticationEntryPoint extends JsonAuthentication implements A
     @Override
     public void commence(HttpServletRequest request, HttpServletResponse response, AuthenticationException e) throws IOException, ServletException {
         Result result = Result.errorWithMessage("访问失败");
-        this.writeJSON(request, response,result );
+        this.writeJSON(request, response,result);
     }
 }

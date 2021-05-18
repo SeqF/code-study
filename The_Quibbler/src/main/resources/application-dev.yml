@@ -1,28 +1,11 @@
 spring:
   server:
-    port: 8080
+    port: 8090
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://120.79.33.152:3306/the_quibbler?serverTimezone=GMT&useUnicode=true&characterEncoding=utf8
     username: root
     password: Gundam00
-    type: com.alibaba.druid.pool.DruidDataSource
-    initialSize: 5
-    minIdle: 5
-    maxActive: 5
-    maxWait: 60000
-    timeBetweenEvictionRunsMillis: 60000
-    minEvictableIdleTimeMillis: 300000
-    validationQuery: SELECT 1 FROM DUAL
-    testWhileIdle: true
-    testOnBorrow: false
-    testOnReturn: false
-    poolPreparedStatements: true
-
-    filters: stat,wall,log4j
-    maxPoolPrepareStatementPerConnectionSize: 20
-    useGlobalDataSourceStat: true
-    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
   redis:
     jedis:
       pool:
