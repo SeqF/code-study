@@ -18,6 +18,7 @@ import java.io.IOException;
  */
 @Component
 public class JwtAuthenticationEntryPoint extends JsonAuthentication implements AuthenticationEntryPoint {
+
     @Override
     public void commence(HttpServletRequest request, HttpServletResponse response, AuthenticationException e) throws IOException, ServletException {
         Result result = Result.errorWithMessage("访问失败");

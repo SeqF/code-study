@@ -1,14 +1,14 @@
 package com.quibbler.service.impl;
 
-import com.quibbler.entity.Tag;
-import com.quibbler.mapper.TagMapper;
-import com.quibbler.service.TagService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.quibbler.mapper.TagMapper;
+import com.quibbler.model.entity.Tag;
+import com.quibbler.service.TagService;
 import org.springframework.stereotype.Service;
 
 /**
  * <p>
- *  服务实现类
+ * 服务实现类
  * </p>
  *
  * @author Paksu

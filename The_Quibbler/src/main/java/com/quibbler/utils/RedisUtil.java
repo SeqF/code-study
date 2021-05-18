@@ -1,10 +1,12 @@
 package com.quibbler.utils;
 
+import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.connection.DataType;
 import org.springframework.data.redis.core.Cursor;
 import org.springframework.data.redis.core.ScanOptions;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.core.ZSetOperations.TypedTuple;
+import org.springframework.stereotype.Component;
 
 import java.util.Collection;
 import java.util.Date;
@@ -17,6 +19,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * @author
  */
+@Component
 public class RedisUtil {
     private StringRedisTemplate redisTemplate;
 

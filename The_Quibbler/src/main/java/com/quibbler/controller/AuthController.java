@@ -31,9 +31,9 @@ public class AuthController {
 
     @GetMapping("/captcha")
     public Result captcha() throws IOException {
-        // the key set in the redis to get code
+        // 设置存进Redis中的key
         String key = UUID.randomUUID().toString();
-        // captcha code save in redis
+        // 验证码
         String code = producer.createText();
 
         BufferedImage image = producer.createImage(code);
@@ -45,7 +45,7 @@ public class AuthController {
 
         String base64Image = pre + encoder.encode(outputStream.toByteArray());
 
-        //put the captcha in redis with the key
+        //将验证码存入redis中
         redisUtil.hPut(Constans.CAPTCHA_KEY, key, code);
         redisUtil.expire(Constans.CAPTCHA_KEY, 120, TimeUnit.SECONDS);
 

@@ -1,6 +1,6 @@
 package com.quibbler;
 
-import com.quibbler.entity.User;
+import com.quibbler.model.entity.User;
 import com.quibbler.service.UserService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -45,6 +45,6 @@ class ThequibblerApplicationTests {
         User user = userService.getById("1");
         redisUserSize = redisTemplate.opsForList().size("ALL_USER_LIST");
         System.out.println("目前缓存中的用户数量为：" + redisUserSize);
-        System.out.println("--------->>>>id：" + user.getId() + " name：" + user.getNickname());
+        System.out.println("--------->>>>id：" + user.getId() + " name：" + user.getNickName());
     }
 }
