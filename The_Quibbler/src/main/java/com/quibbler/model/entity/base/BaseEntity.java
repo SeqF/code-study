@@ -20,7 +20,7 @@ public class BaseEntity implements Serializable {
     private static final long serialVersionUID = -3038714603618398706L;
 
     @TableId(value = "id",type = IdType.UUID)
-    private Long id;
+    private String id;
 
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
