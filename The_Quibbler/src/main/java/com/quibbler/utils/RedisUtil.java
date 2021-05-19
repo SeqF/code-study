@@ -1,5 +1,6 @@
 package com.quibbler.utils;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.connection.DataType;
 import org.springframework.data.redis.core.Cursor;
@@ -21,15 +22,9 @@ import java.util.concurrent.TimeUnit;
  */
 @Component
 public class RedisUtil {
+
+    @Autowired
     private StringRedisTemplate redisTemplate;
-
-    public void setRedisTemplate(StringRedisTemplate redisTemplate) {
-        this.redisTemplate = redisTemplate;
-    }
-
-    public StringRedisTemplate getRedisTemplate() {
-        return this.redisTemplate;
-    }
 
     /** -------------------key相关操作--------------------- */
 

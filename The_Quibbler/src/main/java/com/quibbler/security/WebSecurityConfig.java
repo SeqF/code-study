@@ -29,8 +29,8 @@ import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     private static final String[] URL_WHITELIST = {
-            "/login",
-            "/logout",
+            "/user/login",
+            "/user/logout",
             "/captcha",
     };
 
@@ -97,6 +97,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers(URL_WHITELIST).permitAll()
                 .anyRequest().authenticated()
                 .and()
+                //将验证码过滤器放在用户名密码过滤器之前
                 .addFilterBefore(captchaFilter, UsernamePasswordAuthenticationFilter.class)
 
 
