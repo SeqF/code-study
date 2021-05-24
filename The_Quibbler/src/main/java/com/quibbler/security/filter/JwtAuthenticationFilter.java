@@ -1,13 +1,15 @@
 package com.quibbler.security.filter;
 
 import cn.hutool.core.util.StrUtil;
+import com.quibbler.security.SecurityUserDetailsServiceImpl;
 import com.quibbler.utils.JwtUtil;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwtException;
-import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.web.authentication.www.BasicAuthenticationFilter;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.web.filter.OncePerRequestFilter;
 
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
@@ -16,34 +18,47 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
+ * 用户认证处理器
+ *
  * @author paksu
  */
-public class JwtAuthenticationFilter extends BasicAuthenticationFilter {
+public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
     @Autowired
     private JwtUtil jwtUtil;
 
+    @Autowired
+    private SecurityUserDetailsServiceImpl securityUserDetailsService;
 
-    public JwtAuthenticationFilter(AuthenticationManager authenticationManager) {
-        super(authenticationManager);
-    }
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response,
                                     FilterChain chain) throws IOException, ServletException {
 
-        String jwt = request.getHeader(jwtUtil.getHeader());
-        if (StrUtil.isBlankOrUndefined(jwt)) {
-            chain.doFilter(request, response);
-            return;
+        //从进来的request的token中 获取到数据库
+        String token = request.getHeader(jwtUtil.getHeader());
+
+        if(StrUtil.isNotEmpty(token)&&token.startsWith(jwtUtil.getPrefix())){
+            Claims claim = jwtUtil.getClaimByToken(token);
+            if (claim == null) {
+                throw new JwtException("token异常");
+            }
+            if (jwtUtil.isTokenExpired(claim)) {
+                throw new JwtException("token已过期");
+            }
+
+            String username = claim.getSubject();
+
+            UserDetails userDetails = securityUserDetailsService.loadUserByUsername(username);
+            //获取用户的权限等信息
+            UsernamePasswordAuthenticationToken authentication =
+                    new UsernamePasswordAuthenticationToken(userDetails, null,
+                            userDetails.getAuthorities());
+
+            SecurityContextHolder.getContext().setAuthentication(authentication);
         }
 
-        Claims claim = jwtUtil.getClaimByToken(jwt);
-        if (claim == null) {
-            throw new JwtException("token 异常");
-        }
-        if (jwtUtil.isTokenExpired(claim)) {
-            throw new JwtException("token已过期");
-        }
+        //让过滤器链继续
+        chain.doFilter(request, response);
     }
 }

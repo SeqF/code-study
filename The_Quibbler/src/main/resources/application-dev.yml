@@ -34,4 +34,5 @@ jwt:
   header: Authorization
   expire: 604800
   secret: 11D627F5E1AC9D5B8E56B23752AA832C
+  prefix: Bearer
 

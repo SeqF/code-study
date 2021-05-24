@@ -5,6 +5,7 @@ import com.quibbler.model.entity.User;
 import com.quibbler.utils.Result;
 import com.quibbler.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -28,6 +29,7 @@ public class UserController {
     @Autowired
     UserService userService;
 
+    @PreAuthorize("hasRole('admin')")
     @GetMapping("/index")
     public Result index() {
         User user = new User();

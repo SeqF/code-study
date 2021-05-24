@@ -1,11 +1,13 @@
 package com.quibbler.security;
 
 import com.quibbler.security.filter.CaptchaFilter;
+import com.quibbler.security.filter.JwtAuthenticationFilter;
 import com.quibbler.security.handler.LoginFailureHandler;
 import com.quibbler.security.handler.LoginSuccessHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -41,6 +43,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     private JwtAuthenticationEntryPoint jwtAuthenticationEntryPoint;
 
     @Autowired
+    private JwtAccessDeniedHandler jwtAccessDeniedHandler;
+
+    @Autowired
     private LoginFailureHandler loginFailureHandler;
 
     @Autowired
@@ -50,8 +55,19 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     private CaptchaFilter captchaFilter;
 
     @Bean
+    public JwtAuthenticationFilter jwtAuthenticationFilter() throws Exception {
+        return new JwtAuthenticationFilter();
+    }
+
+    @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
+    }
+
+    @Bean
+    @Override
+    public AuthenticationManager authenticationManager() throws Exception{
+        return super.authenticationManager();
     }
 
     @Bean
@@ -86,19 +102,31 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .csrf().disable()
                 .formLogin()
+                .loginProcessingUrl("/user/login")
                 .successHandler(loginSuccessHandler)
                 .failureHandler(loginFailureHandler)
                 //禁用session
                 .and()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+
                 //配置拦截规则
                 .and()
                 .authorizeRequests()
                 .antMatchers(URL_WHITELIST).permitAll()
                 .anyRequest().authenticated()
+
+                //异常处理器
                 .and()
-                //将验证码过滤器放在用户名密码过滤器之前
-                .addFilterBefore(captchaFilter, UsernamePasswordAuthenticationFilter.class)
+                .exceptionHandling()
+                .authenticationEntryPoint(jwtAuthenticationEntryPoint)
+                .accessDeniedHandler(jwtAccessDeniedHandler)
+
+                //添加自定义过滤器
+                .and()
+                .addFilter(jwtAuthenticationFilter())
+                //将验证码过滤器放在jwt过滤器之前，jwt过滤器放在用户名密码过滤器之前
+                .addFilterBefore(captchaFilter, JwtAuthenticationFilter.class)
+                .addFilterBefore(jwtAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class)
 
 
         ;

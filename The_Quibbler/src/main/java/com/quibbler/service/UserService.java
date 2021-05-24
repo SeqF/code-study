@@ -4,6 +4,8 @@ import com.quibbler.model.entity.User;
 import com.baomidou.mybatisplus.extension.service.IService;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * <p>
  *  服务类
@@ -14,5 +16,19 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public interface UserService extends IService<User> {
+
+    /**
+     * 通过username获取user
+     * @param username
+     * @return
+     */
+    User getByUsername(String username);
+
+    /**
+     * 通过username获取roleCode
+     * @param username
+     * @return
+     */
+    List<String> getRoleCodeByUserId(String username);
 
 }

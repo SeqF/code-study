@@ -11,8 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- *
- * 未授权用户访问资源的限制
+ * 认证失败处理器
  *
  * @author paksu
  */
@@ -21,7 +20,10 @@ public class JwtAuthenticationEntryPoint extends JsonAuthentication implements A
 
     @Override
     public void commence(HttpServletRequest request, HttpServletResponse response, AuthenticationException e) throws IOException, ServletException {
-        Result result = Result.errorWithMessage("访问失败");
-        this.writeJSON(request, response,result);
+
+        //设置response状态码为未认证 401
+        response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
+        Result result = Result.errorWithMessage("未认证,访问失败");
+        this.writeJSON(request, response, result);
     }
 }

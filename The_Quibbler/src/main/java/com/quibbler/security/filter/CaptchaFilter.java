@@ -37,7 +37,7 @@ public class CaptchaFilter extends OncePerRequestFilter {
 
         String url = request.getRequestURI();
 
-        if ("/login".equals(url) && request.getMethod().equals("POST")) {
+        if ("user/login".equals(url) && request.getMethod().equals("POST")) {
             try {
                 //校验验证码
                 validateCaptcha(request);

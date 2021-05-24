@@ -23,6 +23,8 @@ public class JwtUtil {
 
     private String header;
 
+    private String prefix;
+
     /**
      * 生成JWT
      *
@@ -39,7 +41,7 @@ public class JwtUtil {
                 .setSubject(username)
                 .setIssuedAt(nowDate)
                 .setExpiration(expireDate)
-                .signWith(SignatureAlgorithm.ES512, secret)
+                .signWith(SignatureAlgorithm.HS256, secret)
                 .compact();
     }
 
@@ -53,7 +55,7 @@ public class JwtUtil {
         try {
             return Jwts.parser()
                     .setSigningKey(secret)
-                    .parseClaimsJwt(jwt)
+                    .parseClaimsJws(jwt)
                     .getBody();
         } catch (Exception e) {
             //抛出异常则返回空
