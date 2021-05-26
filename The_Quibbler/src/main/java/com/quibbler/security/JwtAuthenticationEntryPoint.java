@@ -28,13 +28,13 @@ public class JwtAuthenticationEntryPoint extends JsonAuthentication implements A
     public void commence(HttpServletRequest request, HttpServletResponse response, AuthenticationException e) throws IOException, ServletException {
 
         String errorMessage = "未认证,访问失败";
-        if (e instanceof LockedException) {
-            errorMessage = "账户被锁定";
-        } else if (e instanceof AccountExpiredException) {
-            errorMessage = "账户过期";
-        } else if (e instanceof DisabledException) {
-            errorMessage = "账户被禁用";
-        }
+//        if (e instanceof LockedException) {
+//            errorMessage = "账户被锁定";
+//        } else if (e instanceof AccountExpiredException) {
+//            errorMessage = "账户过期";
+//        } else if (e instanceof DisabledException) {
+//            errorMessage = "账户被禁用";
+//        }
         //设置response状态码为未认证 401
         response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
         Result result = Result.errorWithMessage(errorMessage);

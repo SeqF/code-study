@@ -120,7 +120,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 //将验证码过滤器放在jwt过滤器之前，jwt过滤器放在用户名密码过滤器之前
                 .addFilterBefore(jwtAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class)
-                .addFilterBefore(captchaFilter, JwtAuthenticationFilter.class)
+//                .addFilterBefore(captchaFilter, JwtAuthenticationFilter.class)
 
 
         ;

@@ -45,7 +45,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
 //            throw new DisabledException("账户被禁用");
             if (claim == null) {
-                throw new JwtException("token异常");
+                throw new DisabledException("token异常");
             }
             if (jwtUtil.isTokenExpired(claim)) {
                 throw new JwtException("token已过期");
