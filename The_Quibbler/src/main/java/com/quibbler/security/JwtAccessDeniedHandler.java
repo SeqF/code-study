@@ -11,8 +11,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * 访问权限处理器
- *
+ * 访问权限不足处理器
+ * 当用户本身权限不满足所访问API需要的权限时，触发这个处理器，返回一个权限不足的结果
  * @author paksu.fang
  */
 @Component

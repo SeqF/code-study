@@ -101,12 +101,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .cors()
                 .and()
                 .csrf().disable()
-                .formLogin()
-                .loginProcessingUrl("/user/login")
-                .successHandler(loginSuccessHandler)
-                .failureHandler(loginFailureHandler)
                 //禁用session
-                .and()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
 
                 //配置拦截规则
@@ -123,10 +118,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
                 //添加自定义过滤器
                 .and()
-                .addFilter(jwtAuthenticationFilter())
                 //将验证码过滤器放在jwt过滤器之前，jwt过滤器放在用户名密码过滤器之前
-                .addFilterBefore(captchaFilter, JwtAuthenticationFilter.class)
                 .addFilterBefore(jwtAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class)
+                .addFilterBefore(captchaFilter, JwtAuthenticationFilter.class)
 
 
         ;

@@ -16,6 +16,7 @@ import java.util.List;
 
 /**
  * 搜索数据库获取user
+ * 封装自己的UserDetail
  *
  * @author paksu
  */

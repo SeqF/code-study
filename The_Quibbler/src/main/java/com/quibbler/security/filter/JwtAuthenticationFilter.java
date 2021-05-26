@@ -6,6 +6,7 @@ import com.quibbler.utils.JwtUtil;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwtException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.authentication.DisabledException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -38,15 +39,17 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
         //从进来的request的token中 获取到数据库
         String token = request.getHeader(jwtUtil.getHeader());
 
-        if(StrUtil.isNotEmpty(token)&&token.startsWith(jwtUtil.getPrefix())){
+        //token不为空时,通过loadByUsername获取到userDetails，并设置到Authentication中
+        if (StrUtil.isNotEmpty(token) && token.startsWith(jwtUtil.getPrefix())) {
             Claims claim = jwtUtil.getClaimByToken(token);
+
+//            throw new DisabledException("账户被禁用");
             if (claim == null) {
                 throw new JwtException("token异常");
             }
             if (jwtUtil.isTokenExpired(claim)) {
                 throw new JwtException("token已过期");
             }
-
             String username = claim.getSubject();
 
             UserDetails userDetails = securityUserDetailsService.loadUserByUsername(username);
@@ -58,7 +61,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             SecurityContextHolder.getContext().setAuthentication(authentication);
         }
 
-        //让过滤器链继续
+//        token为空,让过滤器链继续
         chain.doFilter(request, response);
     }
 }
