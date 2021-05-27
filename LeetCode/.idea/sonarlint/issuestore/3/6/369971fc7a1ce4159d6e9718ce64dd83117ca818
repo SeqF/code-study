@@ -1,0 +1,15 @@
+
+C
+java:S1604"(Make this anonymous inner class a lambda(ÂëÕèþÿÿÿÿ
+C
+java:S1604"(Make this anonymous inner class a lambda(Û‹±·ûÿÿÿÿ
+Œ
+java:S1130"wRemove the declaration of thrown exception 'java.lang.InterruptedException', as it cannot be thrown from method's body.(º™Ú7
+\
+java:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ßý°³
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Ûü®åüÿÿÿÿ
+\
+java:S2142&"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
+S	java:S106#"9Replace this use of System.out or System.err by a logger.(Íø¸Åùÿÿÿÿ
+S	java:S106%"9Replace this use of System.out or System.err by a logger.(Ì‰˜Áÿÿÿÿÿ
