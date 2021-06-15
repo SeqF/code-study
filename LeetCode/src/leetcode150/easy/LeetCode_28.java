@@ -17,7 +17,7 @@ public class LeetCode_28 {
      * @return
      */
     public int strStr(String haystack, String needle) {
-
+        return 1;
     }
 
 }

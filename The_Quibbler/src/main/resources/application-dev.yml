@@ -1,6 +1,6 @@
+server:
+  port: 8090
 spring:
-  server:
-    port: 8090
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://120.79.33.152:3306/the_quibbler?serverTimezone=GMT&useUnicode=true&characterEncoding=utf8
@@ -29,3 +29,10 @@ mybatis-plus:
 
 logging:
   config: classpath:log4j2.xml
+
+jwt:
+  header: Authorization
+  expire: 604800
+  secret: 11D627F5E1AC9D5B8E56B23752AA832C
+  prefix: Bearer
+

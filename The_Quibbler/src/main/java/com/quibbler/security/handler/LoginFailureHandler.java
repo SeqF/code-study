@@ -20,7 +20,7 @@ public class LoginFailureHandler extends JsonAuthentication implements Authentic
 
     @Override
     public void onAuthenticationFailure(HttpServletRequest request, HttpServletResponse response, AuthenticationException e) throws IOException, ServletException {
-        Result result = Result.errorWithMessage(e.getMessage());
+        Result result = Result.errorWithMessage("用户名或密码错误");
         this.writeJSON(request, response, result);
     }
 }

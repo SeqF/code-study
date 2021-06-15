@@ -17,6 +17,11 @@ import javax.servlet.http.HttpServletResponse;
 import javax.xml.ws.soap.Addressing;
 import java.io.IOException;
 
+/**
+ * 验证码校验过滤器
+ *
+ * @author paksu
+ */
 @Component
 public class CaptchaFilter extends OncePerRequestFilter {
 
@@ -32,7 +37,7 @@ public class CaptchaFilter extends OncePerRequestFilter {
 
         String url = request.getRequestURI();
 
-        if ("/login".equals(url) && request.getMethod().equals("POST")) {
+        if ("user/login".equals(url) && request.getMethod().equals("POST")) {
             try {
                 //校验验证码
                 validateCaptcha(request);
@@ -48,7 +53,7 @@ public class CaptchaFilter extends OncePerRequestFilter {
     private void validateCaptcha(HttpServletRequest request) {
 
         String code = request.getParameter("captcha");
-        String key = request.getParameter("token");
+        String key = request.getParameter("key");
 
         if (StrUtil.isBlank(code) || StrUtil.isBlank(key)) {
             throw new CaptchaException("验证码错误");
