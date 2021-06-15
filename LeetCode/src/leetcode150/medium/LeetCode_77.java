@@ -16,13 +16,17 @@ import java.util.List;
  */
 public class LeetCode_77 {
 
+    //result为所有的结果集
     List<List<Integer>> result = new ArrayList<>();
+    //path为每次递归得到的结果
     List<Integer> path = new ArrayList<>();
 
     /**
      * 回溯算法====>暴力枚举
-     * 1、构建出一颗树，树的宽度为问题的规模，深度即为递归的次数
-     * 2、套路一般是在 for 循环中进行 递归
+     * 1、构建出一颗树，树的宽度为问题的规模n，深度即为递归的次数k(即路径的长度)
+     * 2、套路一般是在 for 循环中进行递归
+     * 3、只往后遍历，不往前
+     *
      * @param n
      * @param k
      * @return
