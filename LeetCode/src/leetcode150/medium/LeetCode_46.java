@@ -19,6 +19,14 @@ public class LeetCode_46 {
     List<Integer> path = new ArrayList<>();
     Map<Integer, Boolean> map = new HashMap<>();
 
+    /**
+     * 还是用到回溯算法，这次的思想是如何在访问到所有元素的情况下，排除已访问的元素
+     * 1、使用hash表，标记已访问的元素，当该元素已经被加入path时，就不对该元素进行操作
+     * 2、未访问的元素继续操作
+     *
+     * @param nums
+     * @return
+     */
     public List<List<Integer>> permute(int[] nums) {
         for (int num : nums) {
             map.put(num, Boolean.FALSE);
@@ -36,7 +44,7 @@ public class LeetCode_46 {
             if (Boolean.FALSE.equals(map.get(nums[i]))) {
                 path.add(nums[i]);
                 map.put(nums[i], Boolean.TRUE);
-                backTracking(nums, i+1);
+                backTracking(nums, 0);
                 path.remove(Integer.valueOf(nums[i]));
                 map.put(nums[i], Boolean.FALSE);
             }
