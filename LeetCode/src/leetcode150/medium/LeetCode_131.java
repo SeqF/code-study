@@ -22,6 +22,7 @@ public class LeetCode_131 {
      */
     public List<List<String>> partition(String s) {
         backTracking(s,0);
+        return result;
     }
 
     private void backTracking(String s, int startIndex) {
