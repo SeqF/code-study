@@ -7,7 +7,7 @@ import java.util.List;
  * 分割回文串
  *
  * @author paksu
- *
+ * <p>
  * 链接：https://leetcode-cn.com/problems/palindrome-partitioning/
  */
 public class LeetCode_131 {
@@ -17,29 +17,35 @@ public class LeetCode_131 {
 
     /**
      * 查找子集的基础上判断回文串
+     *
      * @param s
      * @return
      */
     public List<List<String>> partition(String s) {
-        backTracking(s,0);
+        backTracking(s, 0);
         return result;
     }
 
     private void backTracking(String s, int startIndex) {
-        if (isPalindrome(s)) {
+        if (startIndex >= s.length()) {
             result.add(new ArrayList<>(path));
             return;
         }
         for (int i = startIndex; i < s.length(); i++) {
-            path.add(s.substring(startIndex, i));
-            backTracking(s, i+1);
+            if (isPalindrome(s.substring(startIndex, i))) {
+                path.add(s.substring(startIndex, i));
+            } else {
+                continue;
+            }
+            backTracking(s, i + 1);
+            path.remove(path.size() - 1);
         }
     }
 
     //判断是否为回文串
     boolean isPalindrome(String s) {
         int start = 0;
-        int end = s.length()-1;
+        int end = s.length() - 1;
         while (start < end) {
             if (s.charAt(start++) != s.charAt(end--)) {
                 return false;
