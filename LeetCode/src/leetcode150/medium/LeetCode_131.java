@@ -1,6 +1,7 @@
 package leetcode150.medium;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -27,13 +28,14 @@ public class LeetCode_131 {
     }
 
     private void backTracking(String s, int startIndex) {
-        if (startIndex >= s.length()) {
+        //递归出口为startIndex到了字符串的尾部
+        if (startIndex > s.length()-1) {
             result.add(new ArrayList<>(path));
             return;
         }
         for (int i = startIndex; i < s.length(); i++) {
-            if (isPalindrome(s.substring(startIndex, i))) {
-                path.add(s.substring(startIndex, i));
+            if (isPalindrome(s.substring(startIndex, i+1))) {
+                path.add(s.substring(startIndex, i+1));
             } else {
                 continue;
             }
@@ -52,5 +54,12 @@ public class LeetCode_131 {
             }
         }
         return true;
+    }
+
+    public static void main(String[] args) {
+        LeetCode_131 code131 = new LeetCode_131();
+        List<List<String>> list = code131.partition("aab");
+        System.out.println(list.toString());
+
     }
 }
