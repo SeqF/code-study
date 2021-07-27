@@ -38,11 +38,11 @@ public class LeetCode_341 {
         }
 
         private void dfs(List<NestedInteger> list){
-            for(int i = 0;i<list.size();i++){
-                if(list.get(i).isInteger()){
-                    path.add(list.get(i).getInteger());
-                }else{
-                    dfs(list.get(i).getList());
+            for (NestedInteger nestedInteger : list) {
+                if (nestedInteger.isInteger()) {
+                    path.add(nestedInteger.getInteger());
+                } else {
+                    dfs(nestedInteger.getList());
                 }
             }
         }
