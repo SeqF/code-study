@@ -8,6 +8,7 @@ package leetcode150.medium;
  * 链接：https://leetcode-cn.com/problems/implement-trie-prefix-tree/
  */
 public class LeetCode_208 {
+
     private final TireNode root;
 
     /**
@@ -65,6 +66,9 @@ public class LeetCode_208 {
         return !p.isEndingChar;
     }
 
+    /**
+     * 每个节点保存一个26长度的数组，对应26个字母，同时标记这个节点是否为最后一个节点
+     */
     private class TireNode {
         private final char data;
         private final TireNode[] children = new TireNode[26];
