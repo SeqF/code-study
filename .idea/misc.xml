@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/RedisStudy/redis_02_springboot/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringStudy/day01_05_di/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringStudy/day04_04_tx/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringStudy/day01_01_jdbc/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringStudy/day01_04_bean/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringStudy/day03_02_proxy/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringStudy/day01_03_spring/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringStudy/day04_05_tx_xml/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringStudy/day01_02_factory/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringStudy/day03_01_account/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringStudy/day03_05_annoAOP/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringStudy/day04_06_tx_anno/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringStudy/day02_01_anno_ioc/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringStudy/day03_03_springAOP/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringStudy/day03_04_adviceType/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringStudy/day04_01_jdbctemplate/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringStudy/day02_02_account_xmlioc/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringStudy/day02_03_account_annoioc/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringStudy/day04_02_account_aoptx_xml/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringStudy/day04_03_account_aoptx_anno/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringStudy/day04_07_anno_tx_withoutxml/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringStudy/day02_04_account_annoioc_withoutxml/pom.xml" />
+        <option value="$PROJECT_DIR$/MyBatisStudy/Mybatis_study/pom.xml" />
+        <option value="$PROJECT_DIR$/ProjectStudy/pom.xml" />
+        <option value="$PROJECT_DIR$/RabbitMQStudy/pom.xml" />
+        <option value="$PROJECT_DIR$/redis_01_jedis/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringMVCStudy/ssmbuild/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringMVCStudy/springMVC/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringbootStudy/dubbo+zookeeper/consumer-server/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringbootStudy/dubbo+zookeeper/provider-server/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringbootStudy/springboot_08_shiro/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringbootStudy/springboot_02_config/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringbootStudy/springboot_03_logging/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringbootStudy/springboot_08_mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringbootStudy/springboot_09_swagger/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringbootStudy/springboot_10_mission/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringbootStudy/springboot_06_data_jpa/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringbootStudy/springboot_07_security/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringbootStudy/springboot_02_config_02/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringbootStudy/springboot_06_data_jdbc/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringbootStudy/springboot_01_helloworld/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringbootStudy/springboot_04_web_restfulcrud/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringbootStudy/springboot_01_helloworld_quick/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringbootStudy/springboot_02_config_autoconfig/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringCloudStudy/pom.xml" />
+        <option value="$PROJECT_DIR$/ElasticSearchStudy/es_api/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>

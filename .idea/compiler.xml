@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="day02_02_account_xmlioc" />
+        <module name="mybatis_08" />
+        <module name="day03_03_springAOP" />
+        <module name="mybatis_09" />
+        <module name="redis_01_jedis" />
+        <module name="mybatis_04" />
+        <module name="mybatis_05" />
+        <module name="mybatis_06" />
+        <module name="mybatis_07" />
+        <module name="mybatis_01" />
+        <module name="mybatis_02" />
+        <module name="mybatis_03" />
+        <module name="day01_jdbc03_spring" />
+        <module name="day04_04_tx" />
+        <module name="springcloud_api" />
+        <module name="springboot_02_config_02" />
+        <module name="day02_02_account_xmlioc (1)" />
+        <module name="springmvc_06_ajax" />
+        <module name="springboot_02_config" />
+        <module name="springboot-01-helloworld" />
+        <module name="SpringMVC_02_helloMVC" />
+        <module name="day01_jdbc01" />
+        <module name="provider-server" />
+        <module name="ssmbuild" />
+        <module name="day04_04_tx (1)" />
+        <module name="day04_04_tx (2)" />
+        <module name="springboot_07_security" />
+        <module name="SpringMVC_04_controller" />
+        <module name="day03_03_springAOP (2)" />
+        <module name="springboot_08_mybatis" />
+        <module name="day03_02_proxy" />
+        <module name="springboot_10_mission" />
+        <module name="springboot_09_swagger" />
+        <module name="day02_01_anno_ioc" />
+        <module name="springboot_06_data_jpa" />
+        <module name="springboot_02_config_autoconfig" />
+        <module name="day04_04_tx (3)" />
+        <module name="es_api" />
+        <module name="consumer-server" />
+        <module name="day04_01_jdbctemplate" />
+        <module name="redis_02_springboot" />
+        <module name="day02_02_account_xmlioc (3)" />
+        <module name="day03_03_springAOP (1)" />
+        <module name="SpringMVC_03_annotaion" />
+        <module name="day01_jdbc05_di" />
+        <module name="SpringMVC_05_json" />
+        <module name="day02_03_account_annoioc" />
+        <module name="day01_jdbc04_bean" />
+        <module name="day01_jdbc02_factory" />
+        <module name="springboot_06_data_jdbc" />
+        <module name="rabbitMQ_03" />
+        <module name="rabbitMQ_04" />
+        <module name="hello_shiro" />
+        <module name="rabbitMQ_05" />
+        <module name="project_01" />
+        <module name="rabbitMQ_01" />
+        <module name="springcloud_provider_dept_8001" />
+        <module name="rabbitMQ_02" />
+        <module name="day02_02_account_xmlioc (2)" />
+        <module name="springboot_03_logging" />
+        <module name="SpringMVC_01_servlet" />
+        <module name="day02_03_account_annoioc (1)" />
+        <module name="springboot_04_web_restfulcrud" />
+        <module name="springboot_01_helloworld_quick" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="com.study" target="1.5" />
+      <module name="consumer-server" target="1.8" />
+      <module name="day01_jdbc01" target="1.5" />
+      <module name="day01_jdbc02_factory" target="1.5" />
+      <module name="day01_jdbc03_spring" target="1.5" />
+      <module name="day01_jdbc04_bean" target="1.5" />
+      <module name="day01_jdbc05_di" target="1.5" />
+      <module name="day02_01_anno_ioc" target="1.5" />
+      <module name="day02_02_account_xmlioc" target="1.5" />
+      <module name="day02_02_account_xmlioc (1)" target="1.5" />
+      <module name="day02_02_account_xmlioc (2)" target="1.5" />
+      <module name="day02_02_account_xmlioc (3)" target="1.5" />
+      <module name="day02_03_account_annoioc" target="1.5" />
+      <module name="day02_03_account_annoioc (1)" target="1.5" />
+      <module name="day03_02_proxy" target="1.5" />
+      <module name="day03_03_springAOP" target="1.5" />
+      <module name="day03_03_springAOP (1)" target="1.5" />
+      <module name="day03_03_springAOP (2)" target="1.5" />
+      <module name="day04_01_jdbctemplate" target="1.5" />
+      <module name="day04_04_tx" target="1.5" />
+      <module name="day04_04_tx (1)" target="1.5" />
+      <module name="day04_04_tx (2)" target="1.5" />
+      <module name="day04_04_tx (3)" target="1.5" />
+      <module name="es_api" target="1.8" />
+      <module name="hello_shiro" target="1.5" />
+      <module name="mybatis_01" target="1.5" />
+      <module name="mybatis_02" target="1.5" />
+      <module name="mybatis_03" target="1.5" />
+      <module name="mybatis_04" target="1.5" />
+      <module name="mybatis_05" target="1.5" />
+      <module name="mybatis_06" target="1.5" />
+      <module name="mybatis_07" target="1.5" />
+      <module name="mybatis_08" target="1.5" />
+      <module name="mybatis_09" target="1.5" />
+      <module name="Mybatis_study" target="1.5" />
+      <module name="project_01" target="1.8" />
+      <module name="provider-server" target="1.8" />
+      <module name="rabbitMQ_01" target="1.5" />
+      <module name="rabbitMQ_02" target="1.5" />
+      <module name="rabbitMQ_03" target="1.5" />
+      <module name="rabbitMQ_04" target="1.5" />
+      <module name="rabbitMQ_05" target="1.5" />
+      <module name="RabbitMQStudy" target="1.5" />
+      <module name="redis_01_jedis" target="1.5" />
+      <module name="redis_02_springboot" target="1.8" />
+      <module name="springboot-01-helloworld" target="1.8" />
+      <module name="springboot_01_helloworld_quick" target="1.8" />
+      <module name="springboot_02_config" target="1.8" />
+      <module name="springboot_02_config_02" target="1.8" />
+      <module name="springboot_02_config_autoconfig" target="1.8" />
+      <module name="springboot_03_logging" target="1.8" />
+      <module name="springboot_04_web_restfulcrud" target="1.8" />
+      <module name="springboot_06_data_jdbc" target="1.8" />
+      <module name="springboot_06_data_jpa" target="1.8" />
+      <module name="springboot_07_security" target="1.8" />
+      <module name="springboot_08_mybatis" target="1.8" />
+      <module name="springboot_08_shiro" target="1.5" />
+      <module name="springboot_09_swagger" target="1.8" />
+      <module name="springboot_10_mission" target="1.8" />
+      <module name="SpringCloud" target="1.8" />
+      <module name="springcloud_api" target="1.8" />
+      <module name="springcloud_provider_dept_8001" target="1.8" />
+      <module name="SpringMVC_01_servlet" target="1.5" />
+      <module name="SpringMVC_02_helloMVC" target="1.5" />
+      <module name="SpringMVC_03_annotaion" target="1.5" />
+      <module name="SpringMVC_04_controller" target="1.5" />
+      <module name="SpringMVC_05_json" target="1.5" />
+      <module name="springmvc_06_ajax" target="1.5" />
+      <module name="ssmbuild" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="consumer-server" options="-parameters" />
+      <module name="es_api" options="-parameters" />
+      <module name="project_01" options="-parameters" />
+      <module name="provider-server" options="-parameters" />
+      <module name="redis_02_springboot" options="-parameters" />
+      <module name="springboot-01-helloworld" options="-parameters" />
+      <module name="springboot_01_helloworld_quick" options="-parameters" />
+      <module name="springboot_02_config" options="-parameters" />
+      <module name="springboot_02_config_02" options="-parameters" />
+      <module name="springboot_02_config_autoconfig" options="-parameters" />
+      <module name="springboot_03_logging" options="-parameters" />
+      <module name="springboot_04_web_restfulcrud" options="-parameters" />
+      <module name="springboot_06_data_jdbc" options="-parameters" />
+      <module name="springboot_06_data_jpa" options="-parameters" />
+      <module name="springboot_07_security" options="-parameters" />
+      <module name="springboot_08_mybatis" options="-parameters" />
+      <module name="springboot_09_swagger" options="-parameters" />
+      <module name="springboot_10_mission" options="-parameters" />
+    </option>
+  </component>
+</project>

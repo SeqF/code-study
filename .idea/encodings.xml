@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/ElasticSearchStudy/es_api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ProjectStudy/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/RedisStudy/redis_02_springboot/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloudStudy/springcloud_api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloudStudy/springcloud_provider_dept_8001/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloudStudy/springcloud_provider_dept_8001/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringbootStudy/dubbo+zookeeper/consumer-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringbootStudy/dubbo+zookeeper/provider-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringbootStudy/springboot_01_helloworld/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringbootStudy/springboot_01_helloworld_quick/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringbootStudy/springboot_02_config/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringbootStudy/springboot_02_config_02/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringbootStudy/springboot_02_config_autoconfig/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringbootStudy/springboot_03_logging/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringbootStudy/springboot_04_web_restfulcrud/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringbootStudy/springboot_06_data_jdbc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringbootStudy/springboot_06_data_jpa/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringbootStudy/springboot_07_security/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringbootStudy/springboot_08_mybatis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringbootStudy/springboot_09_swagger/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringbootStudy/springboot_10_mission/src/main/java" charset="UTF-8" />
+  </component>
+</project>
