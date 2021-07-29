@@ -1,9 +1,0 @@
-
-o
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(Ñù£–8¹”ºÁ“/
-N
-java:S1128",Remove this unused import 'java.util.Deque'.(³Ã¯¥þÿÿÿÿ8ß”ÅÁ“/
-n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ï¾çÕúÿÿÿÿ8¹­³Á“/
-r
-java:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ÑÖÙƒýÿÿÿÿ8ß”ÅÁ“/
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ã˜ÂÝ
