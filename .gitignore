@@ -1,10 +1,6 @@
-HELP.md
+### Spring Boot ###
 target/
 !.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**
-!**/src/test/**
-logs/
-**/.DS_Store
 
 ### STS ###
 .apt_generated
@@ -20,17 +16,20 @@ logs/
 *.iws
 *.iml
 *.ipr
+out/
+gen/
 
 ### NetBeans ###
 /nbproject/private/
+/build/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
 
-### VS Code ###
-.vscode/
+### LOGS ###
+logs/
+*.log
 
 #sonlar lint
 **/sonarlint
